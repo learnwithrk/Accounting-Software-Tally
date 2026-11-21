@@ -17,7 +17,7 @@ window.PROGRAMS = [
   { n: 7,  ready: false, file: "program-7.html", title: "Program 7",  desc: "To be added." },
   { n: 8,  ready: false, file: "program-8.html", title: "Program 8",  desc: "To be added." },
   { n: 9,  ready: false, file: "program-9.html", title: "Program 9",  desc: "To be added." },
-  { n: 10,  ready: false, file: "program-9.html", title: "Program 9",  desc: "To be added." },
-   { n: 11,  ready: false, file: "program-9.html", title: "Program 9",  desc: "To be added." },
-  { n: 12, ready: false, file: "program-10.html", title: "Program 10", desc: "To be added." }
+  { n: 10,  ready: false, file: "program-9.html", title: "Program 10",  desc: "To be added." },
+   { n: 11,  ready: false, file: "program-9.html", title: "Program 11",  desc: "To be added." },
+  { n: 12, ready: false, file: "program-10.html", title: "Program 12", desc: "To be added." }
 ];
