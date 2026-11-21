@@ -1,28 +1,14 @@
 # Tally Prime Practical Manual
 
-Mobile-friendly manual with one page per program, all using the Mayura Traders case study.
+This Manual will help the learner with step by step process in executing the entries in Tally. 
 
-## Files (all in the repository root)
+## Facilitators
 
 ```
-index.html        Home page (program cards, case study, key reference)
-program-1.html    Company Creation
-program-2.html    Chart of Accounts
-program-3.html    Accounting Vouchers
-style.css         Look and feel (light and dark, mobile first)
-script.js         Menu, progress ticks, theme toggle, previous/next buttons
-programs.js       List of all 10 programs (edit this when adding a program)
+Dr. V. Mallika        Associate Professor and Dean
+Dr. M. Rajakrishnan    Assistant Professor
 ```
 
-## Publish on GitHub Pages
+## 
 
-1. Upload all files to the repository root.
-2. Open **Settings -> Pages**, choose **Deploy from a branch**, branch **main**, folder **/ (root)**, and save.
-3. The site opens at `https://<your-username>.github.io/<repository-name>/`.
-
-## Add the next program (4 to 10)
-
-1. Copy `program-3.html` to `program-4.html`.
-2. Change the title, heading and step content. Keep the same markup for each step and give each tick a new key (`p4-s1`, `p4-s2` and so on).
-3. In `programs.js` set `ready: true` for Program 4 and fill in its `title`, `desc` and `minutes`.
-4. Commit. The menu, home card and previous/next buttons update automatically.
+<a href="https://info.flagcounter.com/u9oN"><img src="https://s05.flagcounter.com/count2/u9oN/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>.
