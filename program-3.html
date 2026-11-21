@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Program 3: Accounting Vouchers | Tally Prime Lab</title>
+<meta name="description" content="Contra, Payment, Receipt, Journal, Sales, Credit Note, Debit Note and Purchase vouchers.">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/programs.js"></script>
+<script src="assets/script.js" defer></script>
+</head>
+<body data-program="3">
+<main>
+<h1>Program 3: Accounting Vouchers</h1>
+<p class="lead">Contra, Payment, Receipt, Journal, Sales, Credit Note, Debit Note and Purchase vouchers.</p>
+<div class="meta"><span class="chip">Tally Prime</span><span class="chip">Intermediate</span><span class="chip">About 60 min</span></div>
+<noscript><p class="warning">Menu and progress ticks need JavaScript. <a href="index.html">Back to all programs</a>.</p></noscript>
+<div class="objectives"><strong>After this program you will be able to:</strong><ol><li>Select the correct voucher type for any transaction.</li><li>Record Contra, Payment, Receipt, Journal, Sales, Credit Note, Debit Note and Purchase vouchers.</li><li>Use bill-wise (reference) details for credit transactions.</li><li>Verify the books with the Day Book, Cash Book, Bank Book, Trial Balance, Profit & Loss account and Balance Sheet.</li></ol></div><div class="warning"><strong>Rule for this program.</strong> Pass every entry only through the voucher type named in its step. Use the Journal voucher only for transactions 14 and 15, which involve neither cash, bank nor a purchase or sale.</div><h2>Choosing the voucher type</h2><table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Voucher</th>
+<th>Key</th>
+<th>Use when</th>
+<th>Transactions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Contra</strong></td>
+<td><code>F4</code></td>
+<td>Money moves between cash and bank</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td><strong>Payment</strong></td>
+<td><code>F5</code></td>
+<td>Money goes out of cash or bank</td>
+<td>3, 4, 10, 12, 13</td>
+</tr>
+<tr class="odd">
+<td><strong>Receipt</strong></td>
+<td><code>F6</code></td>
+<td>Money comes in to cash or bank</td>
+<td>1, 9</td>
+</tr>
+<tr class="even">
+<td><strong>Journal</strong></td>
+<td><code>F7</code></td>
+<td>No cash or bank involved (adjustments)</td>
+<td>14, 15</td>
+</tr>
+<tr class="odd">
+<td><strong>Sales</strong></td>
+<td><code>F8</code></td>
+<td>Goods are sold</td>
+<td>6, 11</td>
+</tr>
+<tr class="even">
+<td><strong>Purchase</strong></td>
+<td><code>F9</code></td>
+<td>Goods are bought</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td><strong>Credit Note</strong></td>
+<td><code>Ctrl + F8</code></td>
+<td>Sales return</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td><strong>Debit Note</strong></td>
+<td><code>Ctrl + F9</code></td>
+<td>Purchase return</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<details class="case"><summary>Case study: Mayura Traders (tap to open)</summary><p><strong>Mayura Traders</strong>, Chennai, is a trading firm owned by Mr. Ramesh. Its financial year is <strong>01-04-2026 to 31-03-2027</strong>. Transactions for <strong>April 2026</strong>:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>No.</th>
+<th>Date</th>
+<th>Transaction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>01-Apr-2026</td>
+<td>Mr. Ramesh started the business with capital of ₹5,00,000, deposited in HDFC Bank.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>02-Apr-2026</td>
+<td>Withdrew ₹50,000 cash from the bank for office use.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>03-Apr-2026</td>
+<td>Paid shop rent ₹15,000 in cash.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>04-Apr-2026</td>
+<td>Bought furniture for ₹60,000, paid by cheque.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>05-Apr-2026</td>
+<td>Purchased goods on credit from Kumar Suppliers ₹2,00,000.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>08-Apr-2026</td>
+<td>Sold goods on credit to Anand Stores ₹2,50,000.</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>10-Apr-2026</td>
+<td>Returned goods worth ₹10,000 to Kumar Suppliers.</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>12-Apr-2026</td>
+<td>Anand Stores returned goods worth ₹8,000.</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>15-Apr-2026</td>
+<td>Received ₹1,00,000 from Anand Stores by cheque, deposited in the bank.</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>18-Apr-2026</td>
+<td>Paid Kumar Suppliers ₹1,20,000 through the bank.</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>22-Apr-2026</td>
+<td>Cash sales ₹50,000.</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>25-Apr-2026</td>
+<td>Paid salary ₹25,000 in cash.</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>27-Apr-2026</td>
+<td>Mr. Ramesh withdrew ₹10,000 from the bank for personal use.</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>28-Apr-2026</td>
+<td>Electricity charges of ₹3,500 for April are outstanding.</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>30-Apr-2026</td>
+<td>Provide depreciation on furniture at 10% p.a.</td>
+</tr>
+</tbody>
+</table>
+</details><h2>Before you start</h2><ol type="1">
+<li>At the Gateway press <code>F2</code> (<strong>Period</strong>) and set <strong>From</strong> 01-04-2026, <strong>To</strong> 30-04-2026.</li>
+<li>For each voucher press the key named in the step, then <code>F2</code> to set the date.</li>
+<li>Accept every voucher with <code>Ctrl + A</code>.</li>
+</ol>
+<div class="note">
+<p>In Payment, Receipt and Contra vouchers the first line is <strong>Account</strong> (the cash or bank ledger); the other ledger goes under <strong>Particulars</strong>. Tally chooses Dr or Cr for you.</p>
+</div>
+<h2>Steps</h2><section class="step" id="p3-s1"><details open><summary data-title="Transaction 1: Receipt voucher (capital introduced)"><span class="num"><span>1</span></span><span>Transaction 1: Receipt voucher (capital introduced)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Receipt, <code>F6</code>, 01-04-2026.</li>
+<li><strong>Account:</strong> HDFC Bank A/c. <strong>Particulars:</strong> Capital A/c. <strong>Amount:</strong> 5,00,000.</li>
+<li><strong>Narration:</strong> Capital introduced by Mr. Ramesh.</li>
+<li><strong>Journal entry:</strong> HDFC Bank A/c Dr 5,00,000; To Capital A/c 5,00,000.</li>
+</ul>
+<label class="done-row"><input type="checkbox" data-key="p3-s1" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s2"><details open><summary data-title="Transaction 2: Contra voucher (cash withdrawn from bank)"><span class="num"><span>2</span></span><span>Transaction 2: Contra voucher (cash withdrawn from bank)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Contra, <code>F4</code>, 02-04-2026.</li>
+<li><strong>Debit:</strong> Cash 50,000. <strong>Credit:</strong> HDFC Bank A/c 50,000.</li>
+<li><strong>Journal entry:</strong> Cash A/c Dr 50,000; To HDFC Bank A/c 50,000.</li>
+</ul>
+<div class="tip">
+<p>Contra is the only voucher where both sides are cash or bank. Tally will not offer an expense ledger here.</p>
+</div>
+<label class="done-row"><input type="checkbox" data-key="p3-s2" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s3"><details open><summary data-title="Transaction 3: Payment voucher (rent paid in cash)"><span class="num"><span>3</span></span><span>Transaction 3: Payment voucher (rent paid in cash)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Payment, <code>F5</code>, 03-04-2026.</li>
+<li><strong>Account:</strong> Cash. <strong>Particulars:</strong> Rent. <strong>Amount:</strong> 15,000.</li>
+<li><strong>Journal entry:</strong> Rent A/c Dr 15,000; To Cash A/c 15,000.</li>
+</ul>
+<label class="done-row"><input type="checkbox" data-key="p3-s3" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s4"><details open><summary data-title="Transaction 4: Payment voucher (furniture by cheque)"><span class="num"><span>4</span></span><span>Transaction 4: Payment voucher (furniture by cheque)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Payment, <code>F5</code>, 04-04-2026.</li>
+<li><strong>Account:</strong> HDFC Bank A/c. <strong>Particulars:</strong> Furniture. <strong>Amount:</strong> 60,000.</li>
+<li>In the bank details set <strong>Transaction type</strong> = Cheque and enter a cheque number (for example 100001).</li>
+<li><strong>Journal entry:</strong> Furniture A/c Dr 60,000; To HDFC Bank A/c 60,000.</li>
+</ul>
+<label class="done-row"><input type="checkbox" data-key="p3-s4" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s5"><details open><summary data-title="Transaction 5: Purchase voucher (credit purchase)"><span class="num"><span>5</span></span><span>Transaction 5: Purchase voucher (credit purchase)</span></summary>
+<div class="stepbody"><ol type="1">
+<li>Press <code>F9</code> (<strong>Purchase</strong>), date 05-04-2026. Use <strong>Accounting Invoice</strong> mode (<code>Ctrl + H</code> if Tally shows item invoice).</li>
+<li><strong>Supplier invoice no.</strong> = <code>KS/101</code>, <strong>Date</strong> = 05-04-2026.</li>
+<li><strong>Party A/c name:</strong> Kumar Suppliers. In <strong>Bill Allocations</strong> choose <strong>New Ref</strong>, <strong>Name</strong> = <code>KS/101</code>, <strong>Amount</strong> = 2,00,000.</li>
+<li><strong>Ledger:</strong> Purchases, <strong>2,00,000</strong>. Accept with <code>Ctrl + A</code>.</li>
+</ol>
+<ul>
+<li><strong>Journal entry:</strong> Purchases A/c Dr 2,00,000; To Kumar Suppliers 2,00,000.</li>
+</ul>
+<div class="see"><strong>You should see:</strong> Kumar Suppliers with a pending bill of ₹2,00,000.
+</div><label class="done-row"><input type="checkbox" data-key="p3-s5" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s6"><details open><summary data-title="Transaction 6: Sales voucher (credit sale)"><span class="num"><span>6</span></span><span>Transaction 6: Sales voucher (credit sale)</span></summary>
+<div class="stepbody"><ol type="1">
+<li>Press <code>F8</code> (<strong>Sales</strong>), date 08-04-2026, <strong>Accounting Invoice</strong> mode.</li>
+<li><strong>Party A/c name:</strong> Anand Stores. Keep the <strong>Invoice no.</strong> Tally proposes (for example 1).</li>
+<li>In <strong>Bill Allocations</strong> choose <strong>New Ref</strong>, <strong>Name</strong> = the invoice number, <strong>Amount</strong> = 2,50,000.</li>
+<li><strong>Ledger:</strong> Sales, <strong>2,50,000</strong>. Accept with <code>Ctrl + A</code>.</li>
+</ol>
+<ul>
+<li><strong>Journal entry:</strong> Anand Stores Dr 2,50,000; To Sales 2,50,000.</li>
+</ul>
+<label class="done-row"><input type="checkbox" data-key="p3-s6" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s7"><details open><summary data-title="Transaction 7: Debit Note voucher (purchase return)"><span class="num"><span>7</span></span><span>Transaction 7: Debit Note voucher (purchase return)</span></summary>
+<div class="stepbody"><ol type="1">
+<li>Press <code>Ctrl + F9</code> (<strong>Debit Note</strong>), date 10-04-2026.</li>
+<li><strong>Party A/c name:</strong> Kumar Suppliers. In <strong>Bill Allocations</strong> choose <strong>Agst Ref</strong>, select <code>KS/101</code> and adjust 10,000.</li>
+<li><strong>Ledger:</strong> Purchase Return, 10,000. Accept with <code>Ctrl + A</code>.</li>
+</ol>
+<ul>
+<li><strong>Journal entry:</strong> Kumar Suppliers Dr 10,000; To Purchase Return 10,000.</li>
+</ul>
+<label class="done-row"><input type="checkbox" data-key="p3-s7" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s8"><details open><summary data-title="Transaction 8: Credit Note voucher (sales return)"><span class="num"><span>8</span></span><span>Transaction 8: Credit Note voucher (sales return)</span></summary>
+<div class="stepbody"><ol type="1">
+<li>Press <code>Ctrl + F8</code> (<strong>Credit Note</strong>), date 12-04-2026.</li>
+<li><strong>Party A/c name:</strong> Anand Stores. In <strong>Bill Allocations</strong> choose <strong>Agst Ref</strong>, select the sales invoice and adjust 8,000.</li>
+<li><strong>Ledger:</strong> Sales Return, 8,000. Accept with <code>Ctrl + A</code>.</li>
+</ol>
+<ul>
+<li><strong>Journal entry:</strong> Sales Return Dr 8,000; To Anand Stores 8,000.</li>
+</ul>
+<label class="done-row"><input type="checkbox" data-key="p3-s8" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s9"><details open><summary data-title="Transaction 9: Receipt voucher (cheque from customer)"><span class="num"><span>9</span></span><span>Transaction 9: Receipt voucher (cheque from customer)</span></summary>
+<div class="stepbody"><ol type="1">
+<li>Press <code>F6</code> (<strong>Receipt</strong>), date 15-04-2026.</li>
+<li><strong>Account:</strong> HDFC Bank A/c. <strong>Particulars:</strong> Anand Stores, <strong>1,00,000</strong>.</li>
+<li>In <strong>Bill Allocations</strong> choose <strong>Agst Ref</strong>, select the sales invoice and adjust 1,00,000. Accept with <code>Ctrl + A</code>.</li>
+</ol>
+<ul>
+<li><strong>Journal entry:</strong> HDFC Bank A/c Dr 1,00,000; To Anand Stores 1,00,000.</li>
+</ul>
+<div class="see"><strong>You should see:</strong> Anand Stores’ pending bill reduced to <strong>₹1,42,000</strong> (2,50,000 - 8,000 - 1,00,000).
+</div><label class="done-row"><input type="checkbox" data-key="p3-s9" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s10"><details open><summary data-title="Transaction 10: Payment voucher (supplier paid by bank)"><span class="num"><span>10</span></span><span>Transaction 10: Payment voucher (supplier paid by bank)</span></summary>
+<div class="stepbody"><ol type="1">
+<li>Press <code>F5</code> (<strong>Payment</strong>), date 18-04-2026.</li>
+<li><strong>Account:</strong> HDFC Bank A/c. <strong>Particulars:</strong> Kumar Suppliers, <strong>1,20,000</strong>.</li>
+<li>In <strong>Bill Allocations</strong> choose <strong>Agst Ref</strong>, select <code>KS/101</code> and adjust 1,20,000. Accept with <code>Ctrl + A</code>.</li>
+</ol>
+<ul>
+<li><strong>Journal entry:</strong> Kumar Suppliers Dr 1,20,000; To HDFC Bank A/c 1,20,000.</li>
+</ul>
+<div class="see"><strong>You should see:</strong> Kumar Suppliers’ pending bill reduced to <strong>₹70,000</strong> (2,00,000 - 10,000 - 1,20,000).
+</div><label class="done-row"><input type="checkbox" data-key="p3-s10" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s11"><details open><summary data-title="Transaction 11: Sales voucher (cash sale)"><span class="num"><span>11</span></span><span>Transaction 11: Sales voucher (cash sale)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Sales, <code>F8</code>, 22-04-2026.</li>
+<li><strong>Party A/c name:</strong> Cash. <strong>Ledger:</strong> Sales, <strong>50,000</strong>.</li>
+<li><strong>Journal entry:</strong> Cash Dr 50,000; To Sales 50,000.</li>
+</ul>
+<label class="done-row"><input type="checkbox" data-key="p3-s11" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s12"><details open><summary data-title="Transaction 12: Payment voucher (salary)"><span class="num"><span>12</span></span><span>Transaction 12: Payment voucher (salary)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Payment, <code>F5</code>, 25-04-2026.</li>
+<li><strong>Account:</strong> Cash. <strong>Particulars:</strong> Salary, 25,000.</li>
+<li><strong>Journal entry:</strong> Salary Dr 25,000; To Cash 25,000.</li>
+</ul>
+<label class="done-row"><input type="checkbox" data-key="p3-s12" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s13"><details open><summary data-title="Transaction 13: Payment voucher (drawings)"><span class="num"><span>13</span></span><span>Transaction 13: Payment voucher (drawings)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Payment, <code>F5</code>, 27-04-2026.</li>
+<li><strong>Account:</strong> HDFC Bank A/c. <strong>Particulars:</strong> Drawings, 10,000.</li>
+<li><strong>Journal entry:</strong> Drawings Dr 10,000; To HDFC Bank A/c 10,000.</li>
+</ul>
+<label class="done-row"><input type="checkbox" data-key="p3-s13" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s14"><details open><summary data-title="Transaction 14: Journal voucher (outstanding expense)"><span class="num"><span>14</span></span><span>Transaction 14: Journal voucher (outstanding expense)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 28-04-2026.</li>
+<li>Line 1: <strong>Dr</strong> Electricity Charges 3,500. Line 2: <strong>Cr</strong> Outstanding Expenses 3,500.</li>
+<li><strong>Narration:</strong> Electricity charges for April outstanding.</li>
+</ul>
+<div class="note">
+<p>In a Journal voucher you choose <strong>Dr</strong> or <strong>Cr</strong> on every line, and total Dr must equal total Cr.</p>
+</div>
+<label class="done-row"><input type="checkbox" data-key="p3-s14" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s15"><details open><summary data-title="Transaction 15: Journal voucher (depreciation)"><span class="num"><span>15</span></span><span>Transaction 15: Journal voucher (depreciation)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 30-04-2026.</li>
+<li>Line 1: <strong>Dr</strong> Depreciation 6,000. Line 2: <strong>Cr</strong> Furniture 6,000.</li>
+<li><strong>Working:</strong> ₹60,000 x 10% = ₹6,000.</li>
+<li><strong>Narration:</strong> Depreciation on furniture at 10% p.a.</li>
+</ul>
+<div class="see"><strong>You should see:</strong> Furniture reduced to <strong>₹54,000</strong> (60,000 - 6,000).
+</div><label class="done-row"><input type="checkbox" data-key="p3-s15" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s16"><details open><summary data-title="Test the deletion rule from Program 2"><span class="num"><span>16</span></span><span>Test the deletion rule from Program 2</span></summary>
+<div class="stepbody"><ol type="1">
+<li>Open <strong>Chart of Accounts</strong> -&gt; <strong>Ledgers</strong>, select <strong>Rent</strong> and press <code>Enter</code>.</li>
+<li>Press <code>Alt + D</code> to delete.</li>
+</ol>
+<div class="see"><strong>You should see:</strong> Tally refuses, because vouchers are posted against <em>Rent</em>. You would have to delete or alter those vouchers first.
+</div><label class="done-row"><input type="checkbox" data-key="p3-s16" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p3-s17"><details open><summary data-title="Verify the books"><span class="num"><span>17</span></span><span>Verify the books</span></summary>
+<div class="stepbody"><p>Open each report with <code>Alt + G</code> and type its name.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Report</th>
+<th>Check</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Day Book</strong></td>
+<td>15 vouchers from 01-04-2026 to 30-04-2026, with the voucher types shown in the table above</td>
+</tr>
+<tr class="even">
+<td><strong>Cash Book</strong></td>
+<td>Closing balance <strong>₹60,000</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Bank Book</strong> (HDFC)</td>
+<td>Closing balance <strong>₹3,60,000</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Ledger: Anand Stores</strong></td>
+<td><strong>₹1,42,000 Dr</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Ledger: Kumar Suppliers</strong></td>
+<td><strong>₹70,000 Cr</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Trial Balance</strong></td>
+<td>Debit = Credit = <strong>₹8,83,500</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Profit &amp; Loss A/c</strong></td>
+<td>Net <strong>profit</strong> of <strong>₹52,500</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Balance Sheet</strong></td>
+<td>Total <strong>₹6,16,000</strong> on each side</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Expected Trial Balance (30-04-2026)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Ledger</th>
+<th style="text-align: right;">Debit (₹)</th>
+<th style="text-align: right;">Credit (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Capital A/c</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">5,00,000</td>
+</tr>
+<tr class="even">
+<td>Drawings</td>
+<td style="text-align: right;">10,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Cash</td>
+<td style="text-align: right;">60,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>HDFC Bank A/c</td>
+<td style="text-align: right;">3,60,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Furniture (after depreciation)</td>
+<td style="text-align: right;">54,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Anand Stores</td>
+<td style="text-align: right;">1,42,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Kumar Suppliers</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">70,000</td>
+</tr>
+<tr class="even">
+<td>Purchases</td>
+<td style="text-align: right;">2,00,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Purchase Return</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">10,000</td>
+</tr>
+<tr class="even">
+<td>Sales</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">3,00,000</td>
+</tr>
+<tr class="odd">
+<td>Sales Return</td>
+<td style="text-align: right;">8,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Rent</td>
+<td style="text-align: right;">15,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Salary</td>
+<td style="text-align: right;">25,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Electricity Charges</td>
+<td style="text-align: right;">3,500</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Depreciation</td>
+<td style="text-align: right;">6,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Outstanding Expenses</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">3,500</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>8,83,500</strong></td>
+<td style="text-align: right;"><strong>8,83,500</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Profit &amp; Loss working</strong></p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th style="text-align: right;">₹</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Net sales (3,00,000 - 8,000)</td>
+<td style="text-align: right;">2,92,000</td>
+</tr>
+<tr class="even">
+<td>Net purchases (2,00,000 - 10,000)</td>
+<td style="text-align: right;">1,90,000</td>
+</tr>
+<tr class="odd">
+<td><strong>Gross profit</strong></td>
+<td style="text-align: right;"><strong>1,02,000</strong></td>
+</tr>
+<tr class="even">
+<td>Indirect expenses (Rent 15,000 + Salary 25,000 + Electricity 3,500 + Depreciation 6,000)</td>
+<td style="text-align: right;">49,500</td>
+</tr>
+<tr class="odd">
+<td><strong>Net profit</strong></td>
+<td style="text-align: right;"><strong>52,500</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Balance Sheet working</strong></p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 28%" />
+<col style="width: 21%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Liabilities</th>
+<th style="text-align: right;">₹</th>
+<th>Assets</th>
+<th style="text-align: right;">₹</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Capital 5,00,000 + net profit 52,500 - drawings 10,000</td>
+<td style="text-align: right;">5,42,500</td>
+<td>Cash</td>
+<td style="text-align: right;">60,000</td>
+</tr>
+<tr class="even">
+<td>Kumar Suppliers</td>
+<td style="text-align: right;">70,000</td>
+<td>HDFC Bank</td>
+<td style="text-align: right;">3,60,000</td>
+</tr>
+<tr class="odd">
+<td>Outstanding Expenses</td>
+<td style="text-align: right;">3,500</td>
+<td>Furniture</td>
+<td style="text-align: right;">54,000</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;"></td>
+<td>Anand Stores</td>
+<td style="text-align: right;">1,42,000</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>6,16,000</strong></td>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>6,16,000</strong></td>
+</tr>
+</tbody>
+</table>
+<label class="done-row"><input type="checkbox" data-key="p3-s17" data-collapse> Mark this step as done</label></div></details></section><h2>Troubleshooting</h2><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Likely cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cannot pick a bill in <strong>Agst Ref</strong></td>
+<td>Party ledger lacks bill-by-bill</td>
+<td>Alter the ledger and set it to Yes</td>
+</tr>
+<tr class="even">
+<td>Ledger not offered in a voucher</td>
+<td>Wrong voucher type</td>
+<td>Use the voucher type named in the step</td>
+</tr>
+<tr class="odd">
+<td>Trial Balance totals differ</td>
+<td>Wrong amount or ledger in a voucher</td>
+<td>Check the <strong>Day Book</strong> voucher by voucher</td>
+</tr>
+<tr class="even">
+<td>Date not accepted</td>
+<td>Period not set or date outside the year</td>
+<td>Press <code>F2</code> and correct the date</td>
+</tr>
+<tr class="odd">
+<td>Journal will not accept</td>
+<td>Dr and Cr not equal</td>
+<td>Correct the amounts until the difference is zero</td>
+</tr>
+</tbody>
+</table>
+<h2>Answer key: voucher mapping</h2><table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>No.</th>
+<th>Voucher</th>
+<th>Key</th>
+<th>Debit</th>
+<th>Credit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Receipt</td>
+<td><code>F6</code></td>
+<td>HDFC Bank 5,00,000</td>
+<td>Capital 5,00,000</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Contra</td>
+<td><code>F4</code></td>
+<td>Cash 50,000</td>
+<td>HDFC Bank 50,000</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Payment</td>
+<td><code>F5</code></td>
+<td>Rent 15,000</td>
+<td>Cash 15,000</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Payment</td>
+<td><code>F5</code></td>
+<td>Furniture 60,000</td>
+<td>HDFC Bank 60,000</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Purchase</td>
+<td><code>F9</code></td>
+<td>Purchases 2,00,000</td>
+<td>Kumar Suppliers 2,00,000</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Sales</td>
+<td><code>F8</code></td>
+<td>Anand Stores 2,50,000</td>
+<td>Sales 2,50,000</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Debit Note</td>
+<td><code>Ctrl + F9</code></td>
+<td>Kumar Suppliers 10,000</td>
+<td>Purchase Return 10,000</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Credit Note</td>
+<td><code>Ctrl + F8</code></td>
+<td>Sales Return 8,000</td>
+<td>Anand Stores 8,000</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Receipt</td>
+<td><code>F6</code></td>
+<td>HDFC Bank 1,00,000</td>
+<td>Anand Stores 1,00,000</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Payment</td>
+<td><code>F5</code></td>
+<td>Kumar Suppliers 1,20,000</td>
+<td>HDFC Bank 1,20,000</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>Sales</td>
+<td><code>F8</code></td>
+<td>Cash 50,000</td>
+<td>Sales 50,000</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Payment</td>
+<td><code>F5</code></td>
+<td>Salary 25,000</td>
+<td>Cash 25,000</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>Payment</td>
+<td><code>F5</code></td>
+<td>Drawings 10,000</td>
+<td>HDFC Bank 10,000</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>Journal</td>
+<td><code>F7</code></td>
+<td>Electricity Charges 3,500</td>
+<td>Outstanding Expenses 3,500</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>Journal</td>
+<td><code>F7</code></td>
+<td>Depreciation 6,000</td>
+<td>Furniture 6,000</td>
+</tr>
+</tbody>
+</table>
+<div class="checkpoint"><strong>Checkpoint 3.</strong> Tick each item before moving on.<ul class="checklist"><li><input type="checkbox" data-key="p3-c-0" id="p3-c-0"><label for="p3-c-0">All 15 vouchers are entered, each through its own voucher type.
+</label></li><li><input type="checkbox" data-key="p3-c-1" id="p3-c-1"><label for="p3-c-1">Cash is ₹60,000 and bank is ₹3,60,000.
+</label></li><li><input type="checkbox" data-key="p3-c-2" id="p3-c-2"><label for="p3-c-2">Trial Balance totals ₹8,83,500 on both sides.
+</label></li><li><input type="checkbox" data-key="p3-c-3" id="p3-c-3"><label for="p3-c-3">Net profit is ₹52,500.
+</label></li></ul></div>
+<p><button class="iconbtn" id="resetProgress" style="width:auto;font-size:.9rem;padding:0 .9rem">Reset ticks on this page</button></p>
+<nav class="pager" id="pager" aria-label="Previous and next program"></nav>
+</main>
+<footer>Mayura Traders case study &middot; Tally Prime practical manual</footer>
+</body>
+</html>

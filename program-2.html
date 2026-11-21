@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Program 2: Chart of Accounts | Tally Prime Lab</title>
+<meta name="description" content="Groups and ledgers: create (single and multiple), alter and delete.">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/programs.js"></script>
+<script src="assets/script.js" defer></script>
+</head>
+<body data-program="2">
+<main>
+<h1>Program 2: Chart of Accounts</h1>
+<p class="lead">Groups and ledgers: create (single and multiple), alter and delete.</p>
+<div class="meta"><span class="chip">Tally Prime</span><span class="chip">Beginner</span><span class="chip">About 40 min</span></div>
+<noscript><p class="warning">Menu and progress ticks need JavaScript. <a href="index.html">Back to all programs</a>.</p></noscript>
+<div class="objectives"><strong>After this program you will be able to:</strong><ol><li>Explain pre-defined, primary and sub-groups.</li><li>Create groups and ledgers (single and multiple).</li><li>Alter and delete ledgers and groups, and explain when deletion is refused.</li></ol></div><h2>Concepts in brief</h2><ul>
+<li>A <strong>group</strong> classifies ledgers; a <strong>ledger</strong> is the account in which transactions are recorded.</li>
+<li>Tally has <strong>28 pre-defined groups</strong>: 15 <strong>primary groups</strong> (for example Capital Account, Current Assets, Current Liabilities, Direct Expenses, Indirect Expenses, Sales Accounts, Purchase Accounts) and 13 <strong>sub-groups</strong> (for example Bank Accounts, Cash-in-Hand, Sundry Debtors, Sundry Creditors).</li>
+<li>A primary group is at the top of the hierarchy; a sub-group sits under another group.</li>
+<li>Transactions are posted only to ledgers, never to groups.</li></ul><details class="case"><summary>Case study: Mayura Traders (tap to open)</summary><p><strong>Mayura Traders</strong>, Chennai, is a trading firm owned by Mr. Ramesh. Its financial year is <strong>01-04-2026 to 31-03-2027</strong>. Transactions for <strong>April 2026</strong>:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>No.</th>
+<th>Date</th>
+<th>Transaction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>01-Apr-2026</td>
+<td>Mr. Ramesh started the business with capital of ₹5,00,000, deposited in HDFC Bank.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>02-Apr-2026</td>
+<td>Withdrew ₹50,000 cash from the bank for office use.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>03-Apr-2026</td>
+<td>Paid shop rent ₹15,000 in cash.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>04-Apr-2026</td>
+<td>Bought furniture for ₹60,000, paid by cheque.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>05-Apr-2026</td>
+<td>Purchased goods on credit from Kumar Suppliers ₹2,00,000.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>08-Apr-2026</td>
+<td>Sold goods on credit to Anand Stores ₹2,50,000.</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>10-Apr-2026</td>
+<td>Returned goods worth ₹10,000 to Kumar Suppliers.</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>12-Apr-2026</td>
+<td>Anand Stores returned goods worth ₹8,000.</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>15-Apr-2026</td>
+<td>Received ₹1,00,000 from Anand Stores by cheque, deposited in the bank.</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>18-Apr-2026</td>
+<td>Paid Kumar Suppliers ₹1,20,000 through the bank.</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>22-Apr-2026</td>
+<td>Cash sales ₹50,000.</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>25-Apr-2026</td>
+<td>Paid salary ₹25,000 in cash.</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>27-Apr-2026</td>
+<td>Mr. Ramesh withdrew ₹10,000 from the bank for personal use.</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>28-Apr-2026</td>
+<td>Electricity charges of ₹3,500 for April are outstanding.</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>30-Apr-2026</td>
+<td>Provide depreciation on furniture at 10% p.a.</td>
+</tr>
+</tbody>
+</table>
+</details><h2>Steps</h2><section class="step" id="p2-s1"><details open><summary data-title="Open the Chart of Accounts"><span class="num"><span>1</span></span><span>Open the Chart of Accounts</span></summary>
+<div class="stepbody"><ol type="1">
+<li>Press <code>Alt + G</code>, type <strong>Chart of Accounts</strong> and select it.</li>
+<li>Choose <strong>Groups</strong> to see the pre-defined groups.</li>
+</ol>
+<div class="see"><strong>You should see:</strong> groups with their parents. <em>Bank Accounts</em> sits under <em>Current Assets</em>.
+</div><label class="done-row"><input type="checkbox" data-key="p2-s1" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p2-s2"><details open><summary data-title="Create the sub-groups"><span class="num"><span>2</span></span><span>Create the sub-groups</span></summary>
+<div class="stepbody"><ol type="1">
+<li><code>Alt + G</code> -&gt; <strong>Create Master</strong> -&gt; <strong>Group</strong>.</li>
+<li>Enter the first sub-group, then press <code>Ctrl + A</code>:</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Under</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Staff Costs</td>
+<td>Indirect Expenses</td>
+</tr>
+<tr class="even">
+<td>Local Suppliers</td>
+<td>Sundry Creditors</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" type="1">
+<li>Repeat for the second row.</li>
+</ol>
+<div class="see"><strong>You should see:</strong> both names under their parent groups in the Chart of Accounts.
+</div><label class="done-row"><input type="checkbox" data-key="p2-s2" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p2-s3"><details open><summary data-title="Create the primary group"><span class="num"><span>3</span></span><span>Create the primary group</span></summary>
+<div class="stepbody"><ol type="1">
+<li><code>Alt + G</code> -&gt; <strong>Create Master</strong> -&gt; <strong>Group</strong>.</li>
+<li><strong>Name</strong> = <code>Marketing Expenses</code>. For <strong>Under</strong> choose <strong>Primary</strong>.</li>
+<li>Set <strong>Nature of group</strong> = <strong>Expenses</strong> and <strong>Group behaves like a sub-ledger</strong> = No. Press <code>Ctrl + A</code>.</li>
+</ol>
+<div class="see"><strong>You should see:</strong> <em>Marketing Expenses</em> at the top level, beside <em>Direct Expenses</em> and <em>Indirect Expenses</em>.
+</div><label class="done-row"><input type="checkbox" data-key="p2-s3" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p2-s4"><details open><summary data-title="Create ledgers one at a time (single ledger)"><span class="num"><span>4</span></span><span>Create ledgers one at a time (single ledger)</span></summary>
+<div class="stepbody"><p><code>Alt + G</code> -&gt; <strong>Create Master</strong> -&gt; <strong>Ledger</strong>. Enter the <strong>Name</strong>, choose <strong>Under</strong>, leave the opening balance blank and press <code>Ctrl + A</code>. Repeat for each row.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ledger</th>
+<th>Under</th>
+<th>Extra settings</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Capital A/c</td>
+<td>Capital Account</td>
+<td>None</td>
+</tr>
+<tr class="even">
+<td>Cash</td>
+<td>Cash-in-Hand</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td>HDFC Bank A/c</td>
+<td>Bank Accounts</td>
+<td>Bank details if asked</td>
+</tr>
+<tr class="even">
+<td>Furniture</td>
+<td>Fixed Assets</td>
+<td>None</td>
+</tr>
+<tr class="odd">
+<td>Purchases</td>
+<td>Purchase Accounts</td>
+<td>Inventory values are affected = No</td>
+</tr>
+<tr class="even">
+<td>Sales</td>
+<td>Sales Accounts</td>
+<td>Inventory values are affected = No</td>
+</tr>
+<tr class="odd">
+<td>Purchase Return</td>
+<td>Purchase Accounts</td>
+<td>Inventory values are affected = No</td>
+</tr>
+<tr class="even">
+<td>Sales Return</td>
+<td>Sales Accounts</td>
+<td>Inventory values are affected = No</td>
+</tr>
+<tr class="odd">
+<td>Kumar Suppliers</td>
+<td>Local Suppliers</td>
+<td>Maintain balances bill-by-bill = Yes; credit period 30 days</td>
+</tr>
+<tr class="even">
+<td>Anand Stores</td>
+<td>Sundry Debtors</td>
+<td>Maintain balances bill-by-bill = Yes; credit period 30 days</td>
+</tr>
+</tbody>
+</table>
+<div class="note">
+<p>Switch on <strong>bill-by-bill</strong> only for party ledgers. It lets you match payments and returns to invoices in Program 3.</p>
+</div>
+<div class="see"><strong>You should see:</strong> each ledger listed under its group.
+</div><label class="done-row"><input type="checkbox" data-key="p2-s4" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p2-s5"><details open><summary data-title="Create several ledgers at once (multiple ledgers)"><span class="num"><span>5</span></span><span>Create several ledgers at once (multiple ledgers)</span></summary>
+<div class="stepbody"><ol type="1">
+<li><code>Alt + G</code> -&gt; <strong>Chart of Accounts</strong> -&gt; <strong>Ledgers</strong>.</li>
+<li>Press <code>Alt + H</code> (<strong>Multi-Masters</strong>) -&gt; <strong>Multi Create</strong> and press <code>Enter</code>.</li>
+<li>For each block choose <strong>Under</strong>, then type the names in the <strong>Name</strong> column.</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Under</th>
+<th>Ledger names</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Indirect Expenses</td>
+<td>Rent; Electricity Charges; Depreciation; Conveyance; Telephone Charges</td>
+</tr>
+<tr class="even">
+<td>Staff Costs</td>
+<td>Salary</td>
+</tr>
+<tr class="odd">
+<td>Capital Account</td>
+<td>Drawings</td>
+</tr>
+<tr class="even">
+<td>Current Liabilities</td>
+<td>Outstanding Expenses</td>
+</tr>
+<tr class="odd">
+<td>Marketing Expenses</td>
+<td>Advertisement</td>
+</tr>
+</tbody>
+</table>
+<ol start="4" type="1">
+<li>Press <code>Ctrl + A</code> to accept.</li>
+</ol>
+<div class="see"><strong>You should see:</strong> all new ledgers under their groups, created in a single screen.
+</div><label class="done-row"><input type="checkbox" data-key="p2-s5" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p2-s6"><details open><summary data-title="Alter ledgers and groups"><span class="num"><span>6</span></span><span>Alter ledgers and groups</span></summary>
+<div class="stepbody"><p><strong>Task A: rename a ledger.</strong> Open <strong>Chart of Accounts</strong> -&gt; <strong>Ledgers</strong>, select <strong>Conveyance</strong>, press <code>Enter</code> and change <strong>Name</strong> to <code>Travelling Expenses</code>. Save.</p>
+<p><strong>Task B: move a ledger.</strong> Alter <strong>Advertisement</strong>, change <strong>Under</strong> to <em>Indirect Expenses</em>, save. Alter again and change it back to <em>Marketing Expenses</em>.</p>
+<p><strong>Task C: rename a group.</strong> In <strong>Groups</strong> select <strong>Local Suppliers</strong>, press <code>Enter</code> and change <strong>Name</strong> to <code>Trade Creditors - Local</code>. Save.</p>
+<div class="warning">
+<p>Changing a ledger’s parent group changes where it appears in the Balance Sheet and Profit &amp; Loss account. Take a backup before major changes.</p>
+</div>
+<div class="see"><strong>You should see:</strong> <em>Kumar Suppliers</em> still sits under the renamed group.
+</div><label class="done-row"><input type="checkbox" data-key="p2-s6" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p2-s7"><details open><summary data-title="Delete a ledger"><span class="num"><span>7</span></span><span>Delete a ledger</span></summary>
+<div class="stepbody"><ol type="1">
+<li>Select <strong>Telephone Charges</strong> in the Chart of Accounts and press <code>Enter</code> (Alter mode).</li>
+<li>Press <code>Alt + D</code> (<strong>Delete</strong>) and confirm with <code>Y</code>.</li>
+</ol>
+<div class="tip">
+<p>A group can be deleted only after all its ledgers and sub-groups are deleted or moved.</p>
+</div>
+<div class="see"><strong>You should see:</strong> <em>Telephone Charges</em> removed, because it has no transactions.
+</div><label class="done-row"><input type="checkbox" data-key="p2-s7" data-collapse> Mark this step as done</label></div></details></section><div class="checkpoint"><strong>Checkpoint 2.</strong> Tick each item before moving on.<ul class="checklist"><li><input type="checkbox" data-key="p2-c-0" id="p2-c-0"><label for="p2-c-0">Three new groups exist: <em>Staff Costs</em>, <em>Trade Creditors - Local</em> and <em>Marketing Expenses</em>.
+</label></li><li><input type="checkbox" data-key="p2-c-1" id="p2-c-1"><label for="p2-c-1"><em>Travelling Expenses</em> replaced <em>Conveyance</em>; <em>Telephone Charges</em> is deleted.
+</label></li><li><input type="checkbox" data-key="p2-c-2" id="p2-c-2"><label for="p2-c-2">Party ledgers have bill-by-bill switched on.
+</label></li><li><input type="checkbox" data-key="p2-c-3" id="p2-c-3"><label for="p2-c-3">After Program 3 you will try to delete <em>Rent</em> and see Tally refuse (Program 3, Step 16).
+</label></li></ul></div>
+<p><button class="iconbtn" id="resetProgress" style="width:auto;font-size:.9rem;padding:0 .9rem">Reset ticks on this page</button></p>
+<nav class="pager" id="pager" aria-label="Previous and next program"></nav>
+</main>
+<footer>Mayura Traders case study &middot; Tally Prime practical manual</footer>
+</body>
+</html>
