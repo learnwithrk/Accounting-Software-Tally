@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Program 10: Adjustments and Final Accounts | Tally Prime Lab</title>
+<meta name="description" content="Pass year-end adjustments and prepare the Trading Account, Profit &amp; Loss Account and Balance Sheet.">
+<link rel="stylesheet" href="style.css">
+<script src="programs.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body data-program="10">
+<main>
+<h1>Program 10: Adjustments and Final Accounts</h1>
+<p class="lead">Pass year-end adjustments and prepare the Trading Account, Profit &amp; Loss Account and Balance Sheet.</p>
+<div class="meta"><span class="chip">Tally Prime</span><span class="chip">Advanced</span><span class="chip">About 60 min</span></div>
+<noscript><p class="warning">Menu and progress ticks need JavaScript. <a href="index.html">Back to all programs</a>.</p></noscript>
+<div class="objectives"><strong>After this program you will be able to:</strong><ol><li>Pass year-end adjustment entries through Journal vouchers.</li><li>Treat closing stock, depreciation, outstanding and prepaid expenses and a provision for doubtful debts.</li><li>Display the Trading Account, Profit & Loss Account and Balance Sheet.</li><li>Agree your reports with the expected figures.</li></ol></div><h2>The problem</h2><p>Using the Trial Balance of Mayura Traders as on 31-03-2027 (recorded in Program 4), pass the adjustments below and prepare the final accounts.</p><details class="case"><summary>Adjustments (tap to open)</summary><table>
+<thead>
+<tr class="header">
+<th>No.</th>
+<th>Adjustment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Closing stock: ₹35,000</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Provide depreciation at 10% on Machinery and Furniture</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Outstanding wages: ₹1,500</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Prepaid advertisement: ₹500</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Create 5% provision for doubtful debts on debtors</td>
+</tr>
+</tbody>
+</table>
+</details><details class="case"><summary>Trial Balance as on 31-03-2027 (tap to open)</summary><table>
+<thead>
+<tr class="header">
+<th>Name of the Account</th>
+<th style="text-align: right;">Debit (₹)</th>
+<th style="text-align: right;">Credit (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Drawings</td>
+<td style="text-align: right;">45,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Goodwill</td>
+<td style="text-align: right;">90,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Buildings</td>
+<td style="text-align: right;">60,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Machinery</td>
+<td style="text-align: right;">40,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Bills Receivable</td>
+<td style="text-align: right;">6,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Opening Stock</td>
+<td style="text-align: right;">40,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Purchases</td>
+<td style="text-align: right;">51,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Wages</td>
+<td style="text-align: right;">26,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Carriage Outward</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Carriage Inward</td>
+<td style="text-align: right;">1,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Salary</td>
+<td style="text-align: right;">35,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Rent</td>
+<td style="text-align: right;">3,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Discount (allowed)</td>
+<td style="text-align: right;">1,100</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Repairs</td>
+<td style="text-align: right;">2,300</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Bank</td>
+<td style="text-align: right;">25,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Cash</td>
+<td style="text-align: right;">1,600</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Debtors</td>
+<td style="text-align: right;">45,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Bad Debts</td>
+<td style="text-align: right;">1,200</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Sales Return</td>
+<td style="text-align: right;">2,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Furniture</td>
+<td style="text-align: right;">6,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Advertisement</td>
+<td style="text-align: right;">3,500</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>General Expenses</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Capital</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1,60,000</td>
+</tr>
+<tr class="even">
+<td>Bills Payable</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">35,000</td>
+</tr>
+<tr class="odd">
+<td>Creditors</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">70,000</td>
+</tr>
+<tr class="even">
+<td>Purchase Return</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">2,600</td>
+</tr>
+<tr class="odd">
+<td>Sales</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">2,18,000</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>4,85,600</strong></td>
+<td style="text-align: right;"><strong>4,85,600</strong></td>
+</tr>
+</tbody>
+</table>
+</details><h2>Concepts in brief</h2><ul><li><strong>Closing stock</strong> is shown on the credit side of the Trading Account and as an asset.</li><li><strong>Depreciation</strong> is a loss from use of an asset; it reduces the asset and is charged to the Profit &amp; Loss Account.</li><li><strong>Outstanding expense</strong> is an expense incurred but not yet paid; add it to the expense and show a liability.</li><li><strong>Prepaid expense</strong> is paid in advance; deduct it from the expense and show an asset.</li><li><strong>Provision for doubtful debts</strong> is an estimated loss on debtors, charged to the Profit &amp; Loss Account and deducted from debtors.</li></ul><div class="warning"><strong>Rule.</strong> Pass all five adjustments only through Journal vouchers dated 31-03-2027.</div><h2>Steps</h2><section class="step" id="p10-s1"><details open><summary data-title="Open the Program 4 company and check the Trial Balance"><span class="num"><span>1</span></span><span>Open the Program 4 company and check the Trial Balance</span></summary>
+<div class="stepbody"><ol type="1">
+<li>Press <code>F1</code> (<strong>Select Company</strong>) and open <strong>Mayura Traders (Final Accounts)</strong> from Program 4.</li>
+<li>Press <code>F2</code> and set the period 01-04-2026 to 31-03-2027.</li>
+<li>Open the <strong>Trial Balance</strong> (<code>Alt + G</code>).</li>
+</ol>
+<div class="note">
+<p>Do not continue until the Trial Balance totals ₹4,85,600. The adjustments in this program build on it.</p>
+</div>
+<div class="see"><strong>You should see:</strong> Trial Balance totals of <strong>₹4,85,600</strong> on both sides.
+</div><label class="done-row"><input type="checkbox" data-key="p10-s1" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p10-s2"><details open><summary data-title="Create the ledgers needed for the adjustments"><span class="num"><span>2</span></span><span>Create the ledgers needed for the adjustments</span></summary>
+<div class="stepbody"><p><code>Alt + G</code> -&gt; <strong>Chart of Accounts</strong> -&gt; <strong>Ledgers</strong> -&gt; <code>Alt + H</code> -&gt; <strong>Multi Create</strong>.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Under</th>
+<th>Ledger names</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Current Assets</td>
+<td>Closing Stock; Prepaid Advertisement</td>
+</tr>
+<tr class="even">
+<td>Direct Incomes</td>
+<td>Closing Stock (Trading A/c)</td>
+</tr>
+<tr class="odd">
+<td>Indirect Expenses</td>
+<td>Depreciation; Provision for Bad &amp; Doubtful Debts</td>
+</tr>
+<tr class="even">
+<td>Current Liabilities</td>
+<td>Outstanding Wages</td>
+</tr>
+<tr class="odd">
+<td>Provisions</td>
+<td>Provision for Doubtful Debts</td>
+</tr>
+</tbody>
+</table>
+<p>Press <code>Ctrl + A</code> to accept.</p>
+<div class="tip">
+<p><strong>Closing stock.</strong> Closing stock is both an asset (Balance Sheet) and a credit item of the Trading Account. The two ledgers above, <em>Closing Stock</em> and <em>Closing Stock (Trading A/c)</em>, let Tally show it correctly in both places in every release.</p>
+</div>
+<div class="see"><strong>You should see:</strong> seven new ledgers under their groups.
+</div><label class="done-row"><input type="checkbox" data-key="p10-s2" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p10-s3"><details open><summary data-title="Adjustment 1: Journal (closing stock)"><span class="num"><span>3</span></span><span>Adjustment 1: Journal (closing stock)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2027.</li>
+<li><strong>Dr</strong> Closing Stock 35,000. <strong>Cr</strong> Closing Stock (Trading A/c) 35,000.</li>
+<li><strong>Narration:</strong> Closing stock as per physical verification.</li>
+</ul>
+<label class="done-row"><input type="checkbox" data-key="p10-s3" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p10-s4"><details open><summary data-title="Adjustment 2: Journal (depreciation at 10%)"><span class="num"><span>4</span></span><span>Adjustment 2: Journal (depreciation at 10%)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2027.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Dr / Cr</th>
+<th>Ledger</th>
+<th style="text-align: right;">Amount (₹)</th>
+<th>Working</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dr</td>
+<td>Depreciation</td>
+<td style="text-align: right;">4,600</td>
+<td>4,000 + 600</td>
+</tr>
+<tr class="even">
+<td>Cr</td>
+<td>Machinery</td>
+<td style="text-align: right;">4,000</td>
+<td>40,000 x 10%</td>
+</tr>
+<tr class="odd">
+<td>Cr</td>
+<td>Furniture</td>
+<td style="text-align: right;">600</td>
+<td>6,000 x 10%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Narration:</strong> Depreciation at 10% on machinery and furniture.</li>
+</ul>
+<div class="see"><strong>You should see:</strong> Machinery at <strong>₹36,000</strong> and Furniture at <strong>₹5,400</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p10-s4" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p10-s5"><details open><summary data-title="Adjustment 3: Journal (outstanding wages)"><span class="num"><span>5</span></span><span>Adjustment 3: Journal (outstanding wages)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2027.</li>
+<li><strong>Dr</strong> Wages 1,500. <strong>Cr</strong> Outstanding Wages 1,500.</li>
+<li><strong>Narration:</strong> Wages outstanding at year end.</li>
+</ul>
+<label class="done-row"><input type="checkbox" data-key="p10-s5" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p10-s6"><details open><summary data-title="Adjustment 4: Journal (prepaid advertisement)"><span class="num"><span>6</span></span><span>Adjustment 4: Journal (prepaid advertisement)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2027.</li>
+<li><strong>Dr</strong> Prepaid Advertisement 500. <strong>Cr</strong> Advertisement 500.</li>
+<li><strong>Narration:</strong> Advertisement paid in advance.</li>
+</ul>
+<div class="see"><strong>You should see:</strong> Advertisement reduced to <strong>₹3,000</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p10-s6" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p10-s7"><details open><summary data-title="Adjustment 5: Journal (provision for doubtful debts)"><span class="num"><span>7</span></span><span>Adjustment 5: Journal (provision for doubtful debts)</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2027.</li>
+<li><strong>Dr</strong> Provision for Bad &amp; Doubtful Debts 2,250. <strong>Cr</strong> Provision for Doubtful Debts 2,250.</li>
+<li><strong>Working:</strong> 5% of Debtors ₹45,000 = ₹2,250.</li>
+<li><strong>Narration:</strong> Provision at 5% on debtors.</li>
+</ul>
+<label class="done-row"><input type="checkbox" data-key="p10-s7" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p10-s8"><details open><summary data-title="Display the adjusted Trial Balance"><span class="num"><span>8</span></span><span>Display the adjusted Trial Balance</span></summary>
+<div class="stepbody"><p>Open the <strong>Trial Balance</strong> again. Only the ledgers affected by the adjustments change.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Ledger</th>
+<th>Change</th>
+<th style="text-align: right;">New balance (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Closing Stock</td>
+<td>New</td>
+<td style="text-align: right;">35,000 Dr</td>
+</tr>
+<tr class="even">
+<td>Closing Stock (Trading A/c)</td>
+<td>New</td>
+<td style="text-align: right;">35,000 Cr</td>
+</tr>
+<tr class="odd">
+<td>Depreciation</td>
+<td>New</td>
+<td style="text-align: right;">4,600 Dr</td>
+</tr>
+<tr class="even">
+<td>Machinery</td>
+<td>- 4,000</td>
+<td style="text-align: right;">36,000 Dr</td>
+</tr>
+<tr class="odd">
+<td>Furniture</td>
+<td>- 600</td>
+<td style="text-align: right;">5,400 Dr</td>
+</tr>
+<tr class="even">
+<td>Wages</td>
+<td>+ 1,500</td>
+<td style="text-align: right;">27,500 Dr</td>
+</tr>
+<tr class="odd">
+<td>Outstanding Wages</td>
+<td>New</td>
+<td style="text-align: right;">1,500 Cr</td>
+</tr>
+<tr class="even">
+<td>Prepaid Advertisement</td>
+<td>New</td>
+<td style="text-align: right;">500 Dr</td>
+</tr>
+<tr class="odd">
+<td>Advertisement</td>
+<td>- 500</td>
+<td style="text-align: right;">3,000 Dr</td>
+</tr>
+<tr class="even">
+<td>Provision for Bad &amp; Doubtful Debts</td>
+<td>New</td>
+<td style="text-align: right;">2,250 Dr</td>
+</tr>
+<tr class="odd">
+<td>Provision for Doubtful Debts</td>
+<td>New</td>
+<td style="text-align: right;">2,250 Cr</td>
+</tr>
+</tbody>
+</table>
+<div class="see"><strong>You should see:</strong> the adjusted Trial Balance totals <strong>₹5,24,350</strong> on both sides.
+</div><label class="done-row"><input type="checkbox" data-key="p10-s8" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p10-s9"><details open><summary data-title="Display the Trading and Profit &amp; Loss Account"><span class="num"><span>9</span></span><span>Display the Trading and Profit & Loss Account</span></summary>
+<div class="stepbody"><p>Press <code>Alt + G</code>, type <strong>Profit &amp; Loss A/c</strong> and press <code>Enter</code>. Compare with the tables below.</p>
+<p><strong>Trading Account (year ended 31-03-2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Particulars</th>
+<th style="text-align: right;">₹</th>
+<th>Particulars</th>
+<th style="text-align: right;">₹</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Opening Stock</td>
+<td style="text-align: right;">40,000</td>
+<td>Sales</td>
+<td style="text-align: right;">2,18,000</td>
+</tr>
+<tr class="even">
+<td>Purchases</td>
+<td style="text-align: right;">51,000</td>
+<td>Less: Sales Return</td>
+<td style="text-align: right;">(2,000)</td>
+</tr>
+<tr class="odd">
+<td>Less: Purchase Return</td>
+<td style="text-align: right;">(2,600)</td>
+<td><strong>Net Sales</strong></td>
+<td style="text-align: right;"><strong>2,16,000</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Net Purchases</strong></td>
+<td style="text-align: right;"><strong>48,400</strong></td>
+<td>Closing Stock</td>
+<td style="text-align: right;">35,000</td>
+</tr>
+<tr class="odd">
+<td>Wages (26,000 + 1,500)</td>
+<td style="text-align: right;">27,500</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Carriage Inward</td>
+<td style="text-align: right;">1,000</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td><strong>Gross Profit c/d</strong></td>
+<td style="text-align: right;"><strong>1,34,100</strong></td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>2,51,000</strong></td>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>2,51,000</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Profit &amp; Loss Account (year ended 31-03-2027)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Particulars</th>
+<th style="text-align: right;">₹</th>
+<th>Particulars</th>
+<th style="text-align: right;">₹</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Carriage Outward</td>
+<td style="text-align: right;">500</td>
+<td>Gross Profit b/d</td>
+<td style="text-align: right;">1,34,100</td>
+</tr>
+<tr class="even">
+<td>Salary</td>
+<td style="text-align: right;">35,000</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Rent</td>
+<td style="text-align: right;">3,000</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Discount Allowed</td>
+<td style="text-align: right;">1,100</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Repairs</td>
+<td style="text-align: right;">2,300</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Bad Debts</td>
+<td style="text-align: right;">1,200</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Advertisement (3,500 - 500)</td>
+<td style="text-align: right;">3,000</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>General Expenses</td>
+<td style="text-align: right;">400</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Depreciation</td>
+<td style="text-align: right;">4,600</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Provision for Doubtful Debts</td>
+<td style="text-align: right;">2,250</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td><strong>Net Profit</strong></td>
+<td style="text-align: right;"><strong>80,750</strong></td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>1,34,100</strong></td>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>1,34,100</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="see"><strong>You should see:</strong> <strong>Gross Profit ₹1,34,100</strong> and <strong>Net Profit ₹80,750</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p10-s9" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p10-s10"><details open><summary data-title="Display the Balance Sheet"><span class="num"><span>10</span></span><span>Display the Balance Sheet</span></summary>
+<div class="stepbody"><p>Press <code>Alt + G</code>, type <strong>Balance Sheet</strong> and press <code>Enter</code>.</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 28%" />
+<col style="width: 21%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Liabilities</th>
+<th style="text-align: right;">₹</th>
+<th>Assets</th>
+<th style="text-align: right;">₹</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Capital</td>
+<td style="text-align: right;">1,60,000</td>
+<td>Goodwill</td>
+<td style="text-align: right;">90,000</td>
+</tr>
+<tr class="even">
+<td>Add: Net Profit</td>
+<td style="text-align: right;">80,750</td>
+<td>Buildings</td>
+<td style="text-align: right;">60,000</td>
+</tr>
+<tr class="odd">
+<td>Less: Drawings</td>
+<td style="text-align: right;">(45,000)</td>
+<td>Machinery (40,000 - 4,000)</td>
+<td style="text-align: right;">36,000</td>
+</tr>
+<tr class="even">
+<td><strong>Capital (closing)</strong></td>
+<td style="text-align: right;"><strong>1,95,750</strong></td>
+<td>Furniture (6,000 - 600)</td>
+<td style="text-align: right;">5,400</td>
+</tr>
+<tr class="odd">
+<td>Bills Payable</td>
+<td style="text-align: right;">35,000</td>
+<td>Closing Stock</td>
+<td style="text-align: right;">35,000</td>
+</tr>
+<tr class="even">
+<td>Creditors</td>
+<td style="text-align: right;">70,000</td>
+<td>Debtors</td>
+<td style="text-align: right;">45,000</td>
+</tr>
+<tr class="odd">
+<td>Outstanding Wages</td>
+<td style="text-align: right;">1,500</td>
+<td>Less: Provision (5%)</td>
+<td style="text-align: right;">(2,250)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;"></td>
+<td><strong>Net Debtors</strong></td>
+<td style="text-align: right;"><strong>42,750</strong></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: right;"></td>
+<td>Bills Receivable</td>
+<td style="text-align: right;">6,000</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;"></td>
+<td>Prepaid Advertisement</td>
+<td style="text-align: right;">500</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: right;"></td>
+<td>Bank</td>
+<td style="text-align: right;">25,000</td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: right;"></td>
+<td>Cash</td>
+<td style="text-align: right;">1,600</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>3,02,250</strong></td>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>3,02,250</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="see"><strong>You should see:</strong> both sides of the Balance Sheet total <strong>₹3,02,250</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p10-s10" data-collapse> Mark this step as done</label></div></details></section><div class="checkpoint"><strong>Checkpoint 10.</strong> Tick each item before moving on.<ul class="checklist"><li><input type="checkbox" data-key="p10-c-0" id="p10-c-0"><label for="p10-c-0">All five adjustments are passed through Journal vouchers.
+</label></li><li><input type="checkbox" data-key="p10-c-1" id="p10-c-1"><label for="p10-c-1">The adjusted Trial Balance totals ₹5,24,350.
+</label></li><li><input type="checkbox" data-key="p10-c-2" id="p10-c-2"><label for="p10-c-2">Gross Profit is ₹1,34,100 and Net Profit is ₹80,750.
+</label></li><li><input type="checkbox" data-key="p10-c-3" id="p10-c-3"><label for="p10-c-3">The Balance Sheet totals ₹3,02,250 on both sides.
+</label></li></ul></div>
+<p><button class="iconbtn" id="resetProgress" style="width:auto;font-size:.9rem;padding:0 .9rem">Reset ticks on this page</button></p>
+<nav class="pager" id="pager" aria-label="Previous and next program"></nav>
+</main>
+<footer>Tally Prime practical manual</footer>
+</body>
+</html>
