@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <title>Program 4: Final Accounts with Adjustments | Tally Prime Lab</title>
-<meta name="description" content="Enter a Trial Balance as opening balances, make the year-end adjustments and prepare the final accounts.">
+<meta name="description" content="Opening balances, vouchers, closing stock, adjustments, final accounts, registers, Cash Book, Bank Book and ledgers.">
 <link rel="stylesheet" href="style.css">
 <script src="programs.js"></script>
 <script src="script.js" defer></script>
@@ -13,10 +13,10 @@
 <body data-program="4">
 <main>
 <h1>Program 4: Final Accounts with Adjustments</h1>
-<p class="lead">Enter a Trial Balance as opening balances, make the year-end adjustments and prepare the final accounts.</p>
-<div class="meta"><span class="chip">Tally Prime</span><span class="chip">Intermediate</span><span class="chip">About 75 min</span></div>
+<p class="lead">Opening balances, vouchers, closing stock, adjustments, final accounts, registers, Cash Book, Bank Book and ledgers.</p>
+<div class="meta"><span class="chip">Tally Prime</span><span class="chip">Intermediate</span><span class="chip">About 90 min</span></div>
 <noscript><p class="warning">Menu and progress ticks need JavaScript. <a href="index.html">Back to all programs</a>.</p></noscript>
-<div class="objectives"><strong>After this program you will be able to:</strong><ol><li>Create ledgers with opening balances, including a stock ledger under Stock-in-Hand.</li><li>Show the closing stock by altering the stock ledger.</li><li>Pass depreciation, outstanding expense, prepaid expense and provision adjustments through Journal vouchers.</li><li>Display the Trading Account, Profit & Loss Account and Balance Sheet.</li></ol></div><h2>Case study</h2><p>Mayura Traders closes its books on 31 March 2027 (financial year 2026-27). The Trial Balance and the year-end adjustments are given below. Enter every balance of the Trial Balance as the opening balance of its ledger, make the adjustments and prepare the final accounts.</p><details class="case"><summary>Trial Balance as on 31-03-2027 (tap to open)</summary><table>
+<div class="objectives"><strong>After this program you will be able to:</strong><ol><li>Create ledgers with opening balances, including a stock ledger under Stock-in-Hand.</li><li>Pass purchase, sales, receipt, payment and contra vouchers.</li><li>Show the closing stock by altering the stock ledger and pass adjustments through Journal vouchers.</li><li>Display the Trading Account, Profit & Loss Account, Balance Sheet, Sales Register, Purchase Register, Cash Book, Bank Book and ledgers.</li></ol></div><h2>Case study</h2><p>Mayura Traders closes its books on 31 March 2026 (financial year 2025-26). The Trial Balance, the transactions of the last week of March 2026 (not yet included in it) and the year-end adjustments are given below. Enter every balance of the Trial Balance as the opening balance of its ledger, pass the transactions, make the adjustments and prepare the final accounts and view the registers, books and ledgers.</p><details class="case"><summary>Trial Balance as on 31-03-2026 (tap to open)</summary><table>
 <thead>
 <tr class="header">
 <th>Name of the Account</th>
@@ -86,7 +86,7 @@
 <td style="text-align: right;"></td>
 </tr>
 <tr class="odd">
-<td>Discount (allowed)</td>
+<td>Discount</td>
 <td style="text-align: right;">1,100</td>
 <td style="text-align: right;"></td>
 </tr>
@@ -167,6 +167,57 @@
 </tr>
 </tbody>
 </table>
+</details><details class="case"><summary>Transactions of 25 to 30 March 2026 (tap to open)</summary><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>No.</th>
+<th>Date</th>
+<th>Transaction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>25-Mar-2026</td>
+<td>Purchased goods on credit from a supplier (Creditors) ₹20,000.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>26-Mar-2026</td>
+<td>Sold goods on credit to a customer (Debtors) ₹30,000.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>27-Mar-2026</td>
+<td>Cash sales ₹20,000.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>28-Mar-2026</td>
+<td>Received ₹15,000 from debtors by cheque into the bank.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>29-Mar-2026</td>
+<td>Paid salary ₹5,000 in cash.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>30-Mar-2026</td>
+<td>Paid creditors ₹12,000 through the bank.</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>30-Mar-2026</td>
+<td>Deposited ₹8,000 cash into the bank.</td>
+</tr>
+</tbody>
+</table>
 </details><details class="case"><summary>Adjustments (tap to open)</summary><table>
 <thead>
 <tr class="header">
@@ -197,7 +248,7 @@
 </tr>
 </tbody>
 </table>
-</details><h2>Concepts in brief</h2><ul><li><strong>Closing stock</strong> is shown on the credit side of the Trading Account and as an asset. It is entered, with the closing date, by altering the stock ledger.</li><li><strong>Depreciation</strong> is a loss from use of an asset; it reduces the asset and is charged to the Profit &amp; Loss Account.</li><li><strong>Outstanding expense</strong> is an expense incurred but not yet paid; add it to the expense and show a liability.</li><li><strong>Prepaid expense</strong> is paid in advance; deduct it from the expense and show an asset.</li><li><strong>Provision for doubtful debts</strong> is an estimated loss on debtors, charged to the Profit &amp; Loss Account and deducted from debtors.</li></ul><div class="warning"><strong>Rule.</strong> Every balance of the Trial Balance is entered as an opening balance. Journal vouchers are used only for the adjustments, dated 31-03-2027. The closing stock is entered by altering the stock ledger, not by a voucher.</div><h2>Steps</h2><section class="step" id="p4-s1"><details open><summary data-title="Create a fresh company"><span class="num"><span>1</span></span><span>Create a fresh company</span></summary>
+</details><h2>Concepts in brief</h2><ul><li><strong>Sales Register</strong> and <strong>Purchase Register</strong> list the sales and purchase vouchers of a period.</li><li><strong>Cash Book</strong> and <strong>Bank Book</strong> list the receipts and payments of the cash and bank ledgers with their opening and closing balances.</li><li><strong>Ledger</strong> shows every entry of one account with its balance.</li><li><strong>Closing stock</strong> is shown on the credit side of the Trading Account and as an asset. It is entered, with the closing date, by altering the stock ledger.</li><li><strong>Depreciation</strong> reduces an asset and is charged to the Profit &amp; Loss Account.</li><li><strong>Outstanding expense</strong> is added to the expense and shown as a liability; <strong>prepaid expense</strong> is deducted from the expense and shown as an asset.</li><li><strong>Provision for doubtful debts</strong> is an estimated loss on debtors, charged to the Profit &amp; Loss Account and deducted from debtors.</li></ul><div class="warning"><strong>Rule.</strong> Every balance of the Trial Balance is entered as an opening balance. Each transaction is passed only through its own voucher type. Journal vouchers are used only for the adjustments, dated 31-03-2026. The closing stock is entered by altering the stock ledger, not by a voucher.</div><h2>Steps</h2><section class="step" id="p4-s1"><details open><summary data-title="Create a fresh company"><span class="num"><span>1</span></span><span>Create a fresh company</span></summary>
 <div class="stepbody"><ol type="1">
 <li>Press <code>Alt + K</code> -&gt; <strong>Create</strong> and create a new company. Use a new company so that data from other programs is not mixed with this exercise.</li>
 </ol>
@@ -215,11 +266,11 @@
 </tr>
 <tr class="even">
 <td><strong>Financial year beginning from</strong></td>
-<td>01-04-2026</td>
+<td>01-04-2025</td>
 </tr>
 <tr class="odd">
 <td><strong>Books beginning from</strong></td>
-<td>01-04-2026</td>
+<td>01-04-2025</td>
 </tr>
 <tr class="even">
 <td><strong>Maintain</strong></td>
@@ -233,11 +284,11 @@
 </table>
 <ol start="2" type="1">
 <li>Press <code>Ctrl + A</code> to accept. Refer to Program 1 for the other fields.</li>
-<li>Press <code>F2</code> (<strong>Period</strong>) and set <strong>From</strong> 01-04-2026, <strong>To</strong> 31-03-2027 (financial year 2026-27).</li>
+<li>Press <code>F2</code> (<strong>Period</strong>) and set <strong>From</strong> 01-04-2025, <strong>To</strong> 31-03-2026 (financial year 2025-26).</li>
 </ol>
 <div class="see"><strong>You should see:</strong> <strong>Mayura Traders (Final Accounts)</strong> in the Gateway title bar.
 </div><label class="done-row"><input type="checkbox" data-key="p4-s1" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s2"><details open><summary data-title="Create the capital and liability ledgers"><span class="num"><span>2</span></span><span>Create the capital and liability ledgers</span></summary>
-<div class="stepbody"><p>Every balance in the Trial Balance is entered as an <strong>opening balance while creating the ledger</strong>. Use <code>Alt + G</code> -&gt; <strong>Create Master</strong> -&gt; <strong>Ledger</strong>. Type the <strong>Name</strong>, choose <strong>Under</strong>, enter the <strong>Opening Balance</strong>, choose <strong>Dr</strong> or <strong>Cr</strong>, and press <code>Ctrl + A</code>. Repeat for each row.</p>
+<div class="stepbody"><p>Every balance in the given Trial Balance is entered as an <strong>opening balance while creating the ledger</strong>. Use <code>Alt + G</code> -&gt; <strong>Create Master</strong> -&gt; <strong>Ledger</strong>. Type the <strong>Name</strong>, choose <strong>Under</strong>, enter the <strong>Opening Balance</strong>, choose <strong>Dr</strong> or <strong>Cr</strong>, and press <code>Ctrl + A</code>. Repeat for each row.</p>
 <table>
 <thead>
 <tr class="header">
@@ -435,7 +486,7 @@
 <div class="see"><strong>You should see:</strong> all 27 ledgers now exist (4 + 9 + 6 + 8).
 </div><label class="done-row"><input type="checkbox" data-key="p4-s5" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s6"><details open><summary data-title="Display the Trial Balance and verify"><span class="num"><span>6</span></span><span>Display the Trial Balance and verify</span></summary>
 <div class="stepbody"><ol type="1">
-<li>Press <code>Alt + G</code>, type <strong>Trial Balance</strong> and press <code>Enter</code>. Make sure the period is 01-04-2026 to 31-03-2027.</li>
+<li>Press <code>Alt + G</code>, type <strong>Trial Balance</strong> and press <code>Enter</code>. Make sure the period is 01-04-2025 to 31-03-2026.</li>
 <li>Compare each ledger with the table below. (Tally shows <em>Stock</em> as the opening stock of ₹40,000.)</li>
 <li>Check that <strong>Difference in opening balances</strong> is nil.</li>
 </ol>
@@ -509,7 +560,7 @@
 <td style="text-align: right;"></td>
 </tr>
 <tr class="odd">
-<td>Discount (allowed)</td>
+<td>Discount</td>
 <td style="text-align: right;">1,100</td>
 <td style="text-align: right;"></td>
 </tr>
@@ -590,20 +641,218 @@
 </tr>
 </tbody>
 </table>
-<div class="note">
-<p>Do not continue until the Trial Balance totals ₹4,85,600. The adjustments build on it.</p>
-</div>
 <div class="see"><strong>You should see:</strong> the Trial Balance totals <strong>₹4,85,600</strong> on both sides.
-</div><label class="done-row"><input type="checkbox" data-key="p4-s6" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s7"><details open><summary data-title="Adjustment 1: show the closing stock by altering the Stock ledger"><span class="num"><span>7</span></span><span>Adjustment 1: show the closing stock by altering the Stock ledger</span></summary>
+</div><label class="done-row"><input type="checkbox" data-key="p4-s6" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s7"><details open><summary data-title="Pass the Purchase and Sales vouchers"><span class="num"><span>7</span></span><span>Pass the Purchase and Sales vouchers</span></summary>
+<div class="stepbody"><p><strong>Purchase voucher (transaction 1)</strong></p>
+<ul>
+<li>Press <code>F9</code>, date 25-03-2026. Use <strong>Accounting Invoice</strong> mode (<code>Ctrl + H</code>).</li>
+<li><strong>Party A/c name:</strong> Creditors. <strong>Ledger:</strong> Purchases, <strong>20,000</strong>.</li>
+<li><strong>Journal entry:</strong> Purchases Dr 20,000; To Creditors 20,000.</li>
+</ul>
+<p><strong>Sales voucher, credit sale (transaction 2)</strong></p>
+<ul>
+<li>Press <code>F8</code>, date 26-03-2026, <strong>Accounting Invoice</strong> mode.</li>
+<li><strong>Party A/c name:</strong> Debtors. <strong>Ledger:</strong> Sales, <strong>30,000</strong>.</li>
+<li><strong>Journal entry:</strong> Debtors Dr 30,000; To Sales 30,000.</li>
+</ul>
+<p><strong>Sales voucher, cash sale (transaction 3)</strong></p>
+<ul>
+<li>Press <code>F8</code>, date 27-03-2026.</li>
+<li><strong>Party A/c name:</strong> Cash. <strong>Ledger:</strong> Sales, <strong>20,000</strong>.</li>
+<li><strong>Journal entry:</strong> Cash Dr 20,000; To Sales 20,000.</li>
+</ul>
+<div class="see"><strong>You should see:</strong> a cash balance of <strong>₹21,600</strong> (1,600 + 20,000).
+</div><label class="done-row"><input type="checkbox" data-key="p4-s7" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s8"><details open><summary data-title="Pass the Receipt voucher"><span class="num"><span>8</span></span><span>Pass the Receipt voucher</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Receipt, <code>F6</code>, 28-03-2026.</li>
+<li><strong>Account:</strong> Bank A/c. <strong>Particulars:</strong> Debtors, <strong>15,000</strong>.</li>
+<li><strong>Narration:</strong> Cheque received from debtors.</li>
+<li><strong>Journal entry:</strong> Bank A/c Dr 15,000; To Debtors 15,000.</li>
+</ul>
+<div class="see"><strong>You should see:</strong> a bank balance of <strong>₹40,000</strong> (25,000 + 15,000).
+</div><label class="done-row"><input type="checkbox" data-key="p4-s8" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s9"><details open><summary data-title="Pass the Payment vouchers"><span class="num"><span>9</span></span><span>Pass the Payment vouchers</span></summary>
+<div class="stepbody"><p><strong>Payment voucher, salary in cash (transaction 5)</strong></p>
+<ul>
+<li>Press <code>F5</code>, date 29-03-2026. <strong>Account:</strong> Cash. <strong>Particulars:</strong> Salary, <strong>5,000</strong>.</li>
+<li><strong>Journal entry:</strong> Salary Dr 5,000; To Cash 5,000.</li>
+</ul>
+<p><strong>Payment voucher, creditors by bank (transaction 6)</strong></p>
+<ul>
+<li>Press <code>F5</code>, date 30-03-2026. <strong>Account:</strong> Bank A/c. <strong>Particulars:</strong> Creditors, <strong>12,000</strong>.</li>
+<li><strong>Journal entry:</strong> Creditors Dr 12,000; To Bank A/c 12,000.</li>
+</ul>
+<div class="see"><strong>You should see:</strong> a bank balance of <strong>₹28,000</strong> (40,000 - 12,000).
+</div><label class="done-row"><input type="checkbox" data-key="p4-s9" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s10"><details open><summary data-title="Pass the Contra voucher"><span class="num"><span>10</span></span><span>Pass the Contra voucher</span></summary>
+<div class="stepbody"><ul>
+<li><strong>Voucher / key / date:</strong> Contra, <code>F4</code>, 30-03-2026.</li>
+<li><strong>Debit:</strong> Bank A/c 8,000. <strong>Credit:</strong> Cash 8,000.</li>
+<li><strong>Narration:</strong> Cash deposited into the bank.</li>
+</ul>
+<div class="see"><strong>You should see:</strong> cash of <strong>₹8,600</strong> and bank of <strong>₹36,000</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p4-s10" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s11"><details open><summary data-title="Display the Trial Balance after the vouchers"><span class="num"><span>11</span></span><span>Display the Trial Balance after the vouchers</span></summary>
+<div class="stepbody"><p>Open the <strong>Trial Balance</strong> again. Only the ledgers touched by the seven vouchers change.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Name of the Account</th>
+<th style="text-align: right;">Debit (₹)</th>
+<th style="text-align: right;">Credit (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Drawings</td>
+<td style="text-align: right;">45,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Goodwill</td>
+<td style="text-align: right;">90,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Buildings</td>
+<td style="text-align: right;">60,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Machinery</td>
+<td style="text-align: right;">40,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Bills Receivable</td>
+<td style="text-align: right;">6,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Opening Stock</td>
+<td style="text-align: right;">40,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Purchases</td>
+<td style="text-align: right;">71,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Wages</td>
+<td style="text-align: right;">26,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Carriage Outward</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Carriage Inward</td>
+<td style="text-align: right;">1,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Salary</td>
+<td style="text-align: right;">40,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Rent</td>
+<td style="text-align: right;">3,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Discount</td>
+<td style="text-align: right;">1,100</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Repairs</td>
+<td style="text-align: right;">2,300</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Bank</td>
+<td style="text-align: right;">36,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Cash</td>
+<td style="text-align: right;">8,600</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Debtors</td>
+<td style="text-align: right;">60,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Bad Debts</td>
+<td style="text-align: right;">1,200</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Sales Return</td>
+<td style="text-align: right;">2,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Furniture</td>
+<td style="text-align: right;">6,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Advertisement</td>
+<td style="text-align: right;">3,500</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>General Expenses</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>Capital</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1,60,000</td>
+</tr>
+<tr class="even">
+<td>Bills Payable</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">35,000</td>
+</tr>
+<tr class="odd">
+<td>Creditors</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">78,000</td>
+</tr>
+<tr class="even">
+<td>Purchase Return</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">2,600</td>
+</tr>
+<tr class="odd">
+<td>Sales</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">2,68,000</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>5,43,600</strong></td>
+<td style="text-align: right;"><strong>5,43,600</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="see"><strong>You should see:</strong> the Trial Balance totals <strong>₹5,43,600</strong> on both sides.
+</div><label class="done-row"><input type="checkbox" data-key="p4-s11" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s12"><details open><summary data-title="Closing stock: alter the Stock ledger"><span class="num"><span>12</span></span><span>Closing stock: alter the Stock ledger</span></summary>
 <div class="stepbody"><ol type="1">
 <li><code>Alt + G</code> -&gt; <strong>Chart of Accounts</strong> -&gt; <strong>Ledgers</strong>, select <strong>Stock</strong> (under Stock-in-Hand) and press <code>Enter</code> (Alter mode).</li>
-<li>Enter the closing date <strong>31-03-2027</strong> and the closing stock value of <strong>35,000</strong>, then press <code>Ctrl + A</code>.</li>
+<li>Enter the closing date <strong>31-03-2026</strong> and the closing stock value of <strong>35,000</strong>, then press <code>Ctrl + A</code>.</li>
 </ol>
 <div class="note">
 <p>The opening stock of ₹40,000 stays as the opening balance of the ledger. The closing stock of ₹35,000 is shown on the credit side of the Trading Account and as an asset in the Balance Sheet. The label of the closing stock field can differ slightly between Tally releases.</p>
 </div>
 <div class="see"><strong>You should see:</strong> <em>Closing Stock</em> of <strong>₹35,000</strong> in the Trading Account.
-</div><label class="done-row"><input type="checkbox" data-key="p4-s7" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s8"><details open><summary data-title="Create the ledgers needed for the other adjustments"><span class="num"><span>8</span></span><span>Create the ledgers needed for the other adjustments</span></summary>
+</div><label class="done-row"><input type="checkbox" data-key="p4-s12" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s13"><details open><summary data-title="Create the ledgers needed for the adjustments"><span class="num"><span>13</span></span><span>Create the ledgers needed for the adjustments</span></summary>
 <div class="stepbody"><p><code>Alt + G</code> -&gt; <strong>Chart of Accounts</strong> -&gt; <strong>Ledgers</strong> -&gt; <code>Alt + H</code> -&gt; <strong>Multi Create</strong>.</p>
 <table>
 <thead>
@@ -615,7 +864,7 @@
 <tbody>
 <tr class="odd">
 <td>Indirect Expenses</td>
-<td>Depreciation; Provision for Bad &amp; Doubtful Debts</td>
+<td>Depreciation; Provision for Doubtful Debts</td>
 </tr>
 <tr class="even">
 <td>Current Liabilities</td>
@@ -625,17 +874,13 @@
 <td>Current Assets</td>
 <td>Prepaid Advertisement</td>
 </tr>
-<tr class="even">
-<td>Provisions</td>
-<td>Provision for Doubtful Debts</td>
-</tr>
 </tbody>
 </table>
 <p>Press <code>Ctrl + A</code> to accept.</p>
-<div class="see"><strong>You should see:</strong> five new ledgers under their groups.
-</div><label class="done-row"><input type="checkbox" data-key="p4-s8" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s9"><details open><summary data-title="Adjustment 2: Journal (depreciation at 10%)"><span class="num"><span>9</span></span><span>Adjustment 2: Journal (depreciation at 10%)</span></summary>
+<div class="see"><strong>You should see:</strong> four new ledgers under their groups.
+</div><label class="done-row"><input type="checkbox" data-key="p4-s13" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s14"><details open><summary data-title="Adjustment: Journal (depreciation at 10%)"><span class="num"><span>14</span></span><span>Adjustment: Journal (depreciation at 10%)</span></summary>
 <div class="stepbody"><ul>
-<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2027.</li>
+<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2026.</li>
 </ul>
 <table>
 <thead>
@@ -671,30 +916,31 @@
 <li><strong>Narration:</strong> Depreciation at 10% on machinery and furniture.</li>
 </ul>
 <div class="see"><strong>You should see:</strong> Machinery at <strong>₹36,000</strong> and Furniture at <strong>₹5,400</strong>.
-</div><label class="done-row"><input type="checkbox" data-key="p4-s9" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s10"><details open><summary data-title="Adjustment 3: Journal (outstanding wages)"><span class="num"><span>10</span></span><span>Adjustment 3: Journal (outstanding wages)</span></summary>
+</div><label class="done-row"><input type="checkbox" data-key="p4-s14" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s15"><details open><summary data-title="Adjustment: Journal (outstanding wages)"><span class="num"><span>15</span></span><span>Adjustment: Journal (outstanding wages)</span></summary>
 <div class="stepbody"><ul>
-<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2027.</li>
+<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2026.</li>
 <li><strong>Dr</strong> Wages 1,500. <strong>Cr</strong> Outstanding Wages 1,500.</li>
 <li><strong>Narration:</strong> Wages outstanding at year end.</li>
 </ul>
 <div class="see"><strong>You should see:</strong> Wages of <strong>₹27,500</strong> (26,000 + 1,500).
-</div><label class="done-row"><input type="checkbox" data-key="p4-s10" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s11"><details open><summary data-title="Adjustment 4: Journal (prepaid advertisement)"><span class="num"><span>11</span></span><span>Adjustment 4: Journal (prepaid advertisement)</span></summary>
+</div><label class="done-row"><input type="checkbox" data-key="p4-s15" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s16"><details open><summary data-title="Adjustment: Journal (prepaid advertisement)"><span class="num"><span>16</span></span><span>Adjustment: Journal (prepaid advertisement)</span></summary>
 <div class="stepbody"><ul>
-<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2027.</li>
+<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2026.</li>
 <li><strong>Dr</strong> Prepaid Advertisement 500. <strong>Cr</strong> Advertisement 500.</li>
 <li><strong>Narration:</strong> Advertisement paid in advance.</li>
 </ul>
 <div class="see"><strong>You should see:</strong> Advertisement reduced to <strong>₹3,000</strong>.
-</div><label class="done-row"><input type="checkbox" data-key="p4-s11" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s12"><details open><summary data-title="Adjustment 5: Journal (provision for doubtful debts)"><span class="num"><span>12</span></span><span>Adjustment 5: Journal (provision for doubtful debts)</span></summary>
+</div><label class="done-row"><input type="checkbox" data-key="p4-s16" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s17"><details open><summary data-title="Adjustment: Journal (provision for doubtful debts)"><span class="num"><span>17</span></span><span>Adjustment: Journal (provision for doubtful debts)</span></summary>
 <div class="stepbody"><ul>
-<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2027.</li>
-<li><strong>Dr</strong> Provision for Bad &amp; Doubtful Debts 2,250. <strong>Cr</strong> Provision for Doubtful Debts 2,250.</li>
-<li><strong>Working:</strong> 5% of Debtors ₹45,000 = ₹2,250.</li>
+<li><strong>Voucher / key / date:</strong> Journal, <code>F7</code>, 31-03-2026.</li>
+<li><strong>Dr</strong> Provision for Doubtful Debts 3,000. <strong>Cr</strong> Debtors 3,000.</li>
+<li><strong>Working:</strong> 5% of Debtors ₹60,000 (balance after the vouchers) = ₹3,000.</li>
 <li><strong>Narration:</strong> Provision at 5% on debtors.</li>
 </ul>
-<label class="done-row"><input type="checkbox" data-key="p4-s12" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s13"><details open><summary data-title="Display the Trading and Profit &amp; Loss Account"><span class="num"><span>13</span></span><span>Display the Trading and Profit & Loss Account</span></summary>
+<div class="see"><strong>You should see:</strong> Debtors reduced to <strong>₹57,000</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p4-s17" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s18"><details open><summary data-title="Display the Trading and Profit &amp; Loss Account"><span class="num"><span>18</span></span><span>Display the Trading and Profit & Loss Account</span></summary>
 <div class="stepbody"><p>Press <code>Alt + G</code>, type <strong>Profit &amp; Loss A/c</strong> and press <code>Enter</code>. Compare with the tables below.</p>
-<p><strong>Trading Account (year ended 31-03-2027)</strong></p>
+<p><strong>Trading Account (year ended 31-03-2026)</strong></p>
 <table>
 <thead>
 <tr class="header">
@@ -709,11 +955,11 @@
 <td>Opening Stock</td>
 <td style="text-align: right;">40,000</td>
 <td>Sales</td>
-<td style="text-align: right;">2,18,000</td>
+<td style="text-align: right;">2,68,000</td>
 </tr>
 <tr class="even">
 <td>Purchases</td>
-<td style="text-align: right;">51,000</td>
+<td style="text-align: right;">71,000</td>
 <td>Less: Sales Return</td>
 <td style="text-align: right;">(2,000)</td>
 </tr>
@@ -721,11 +967,11 @@
 <td>Less: Purchase Return</td>
 <td style="text-align: right;">(2,600)</td>
 <td><strong>Net Sales</strong></td>
-<td style="text-align: right;"><strong>2,16,000</strong></td>
+<td style="text-align: right;"><strong>2,66,000</strong></td>
 </tr>
 <tr class="even">
 <td><strong>Net Purchases</strong></td>
-<td style="text-align: right;"><strong>48,400</strong></td>
+<td style="text-align: right;"><strong>68,400</strong></td>
 <td>Closing Stock</td>
 <td style="text-align: right;">35,000</td>
 </tr>
@@ -743,19 +989,19 @@
 </tr>
 <tr class="odd">
 <td><strong>Gross Profit c/d</strong></td>
-<td style="text-align: right;"><strong>1,34,100</strong></td>
+<td style="text-align: right;"><strong>1,64,100</strong></td>
 <td></td>
 <td style="text-align: right;"></td>
 </tr>
 <tr class="even">
 <td><strong>Total</strong></td>
-<td style="text-align: right;"><strong>2,51,000</strong></td>
+<td style="text-align: right;"><strong>3,01,000</strong></td>
 <td><strong>Total</strong></td>
-<td style="text-align: right;"><strong>2,51,000</strong></td>
+<td style="text-align: right;"><strong>3,01,000</strong></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Profit &amp; Loss Account (year ended 31-03-2027)</strong></p>
+<p><strong>Profit &amp; Loss Account (year ended 31-03-2026)</strong></p>
 <table>
 <thead>
 <tr class="header">
@@ -770,11 +1016,11 @@
 <td>Carriage Outward</td>
 <td style="text-align: right;">500</td>
 <td>Gross Profit b/d</td>
-<td style="text-align: right;">1,34,100</td>
+<td style="text-align: right;">1,64,100</td>
 </tr>
 <tr class="even">
 <td>Salary</td>
-<td style="text-align: right;">35,000</td>
+<td style="text-align: right;">40,000</td>
 <td></td>
 <td style="text-align: right;"></td>
 </tr>
@@ -822,26 +1068,26 @@
 </tr>
 <tr class="even">
 <td>Provision for Doubtful Debts</td>
-<td style="text-align: right;">2,250</td>
+<td style="text-align: right;">3,000</td>
 <td></td>
 <td style="text-align: right;"></td>
 </tr>
 <tr class="odd">
 <td><strong>Net Profit</strong></td>
-<td style="text-align: right;"><strong>80,750</strong></td>
+<td style="text-align: right;"><strong>1,05,000</strong></td>
 <td></td>
 <td style="text-align: right;"></td>
 </tr>
 <tr class="even">
 <td><strong>Total</strong></td>
-<td style="text-align: right;"><strong>1,34,100</strong></td>
+<td style="text-align: right;"><strong>1,64,100</strong></td>
 <td><strong>Total</strong></td>
-<td style="text-align: right;"><strong>1,34,100</strong></td>
+<td style="text-align: right;"><strong>1,64,100</strong></td>
 </tr>
 </tbody>
 </table>
-<div class="see"><strong>You should see:</strong> <strong>Gross Profit ₹1,34,100</strong> and <strong>Net Profit ₹80,750</strong>.
-</div><label class="done-row"><input type="checkbox" data-key="p4-s13" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s14"><details open><summary data-title="Display the Balance Sheet"><span class="num"><span>14</span></span><span>Display the Balance Sheet</span></summary>
+<div class="see"><strong>You should see:</strong> <strong>Gross Profit ₹1,64,100</strong> and <strong>Net Profit ₹1,05,000</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p4-s18" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s19"><details open><summary data-title="Display the Balance Sheet"><span class="num"><span>19</span></span><span>Display the Balance Sheet</span></summary>
 <div class="stepbody"><p>Press <code>Alt + G</code>, type <strong>Balance Sheet</strong> and press <code>Enter</code>.</p>
 <table>
 <colgroup>
@@ -867,7 +1113,7 @@
 </tr>
 <tr class="even">
 <td>Add: Net Profit</td>
-<td style="text-align: right;">80,750</td>
+<td style="text-align: right;">1,05,000</td>
 <td>Buildings</td>
 <td style="text-align: right;">60,000</td>
 </tr>
@@ -879,7 +1125,7 @@
 </tr>
 <tr class="even">
 <td><strong>Capital (closing)</strong></td>
-<td style="text-align: right;"><strong>1,95,750</strong></td>
+<td style="text-align: right;"><strong>2,20,000</strong></td>
 <td>Furniture (6,000 - 600)</td>
 <td style="text-align: right;">5,400</td>
 </tr>
@@ -891,25 +1137,13 @@
 </tr>
 <tr class="even">
 <td>Creditors</td>
-<td style="text-align: right;">70,000</td>
-<td>Debtors</td>
-<td style="text-align: right;">45,000</td>
+<td style="text-align: right;">78,000</td>
+<td>Debtors (60,000 - 3,000)</td>
+<td style="text-align: right;">57,000</td>
 </tr>
 <tr class="odd">
 <td>Outstanding Wages</td>
 <td style="text-align: right;">1,500</td>
-<td>Less: Provision (5%)</td>
-<td style="text-align: right;">(2,250)</td>
-</tr>
-<tr class="even">
-<td></td>
-<td style="text-align: right;"></td>
-<td><strong>Net Debtors</strong></td>
-<td style="text-align: right;"><strong>42,750</strong></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td style="text-align: right;"></td>
 <td>Bills Receivable</td>
 <td style="text-align: right;">6,000</td>
 </tr>
@@ -923,29 +1157,266 @@
 <td></td>
 <td style="text-align: right;"></td>
 <td>Bank</td>
-<td style="text-align: right;">25,000</td>
+<td style="text-align: right;">36,000</td>
 </tr>
 <tr class="even">
 <td></td>
 <td style="text-align: right;"></td>
 <td>Cash</td>
-<td style="text-align: right;">1,600</td>
+<td style="text-align: right;">8,600</td>
 </tr>
 <tr class="odd">
 <td><strong>Total</strong></td>
-<td style="text-align: right;"><strong>3,02,250</strong></td>
+<td style="text-align: right;"><strong>3,34,500</strong></td>
 <td><strong>Total</strong></td>
-<td style="text-align: right;"><strong>3,02,250</strong></td>
+<td style="text-align: right;"><strong>3,34,500</strong></td>
 </tr>
 </tbody>
 </table>
-<div class="see"><strong>You should see:</strong> both sides of the Balance Sheet total <strong>₹3,02,250</strong>.
-</div><label class="done-row"><input type="checkbox" data-key="p4-s14" data-collapse> Mark this step as done</label></div></details></section><div class="checkpoint"><strong>Checkpoint 4.</strong> Tick each item before moving on.<ul class="checklist"><li><input type="checkbox" data-key="p4-c-0" id="p4-c-0"><label for="p4-c-0">All 27 ledgers are created with their opening balances under the correct groups.
-</label></li><li><input type="checkbox" data-key="p4-c-1" id="p4-c-1"><label for="p4-c-1">The Trial Balance totals ₹4,85,600 and the difference in opening balances is nil.
-</label></li><li><input type="checkbox" data-key="p4-c-2" id="p4-c-2"><label for="p4-c-2">Closing stock of ₹35,000 is entered by altering the Stock ledger.
-</label></li><li><input type="checkbox" data-key="p4-c-3" id="p4-c-3"><label for="p4-c-3">The four other adjustments are passed through Journal vouchers.
-</label></li><li><input type="checkbox" data-key="p4-c-4" id="p4-c-4"><label for="p4-c-4">Gross Profit is ₹1,34,100 and Net Profit is ₹80,750.
-</label></li><li><input type="checkbox" data-key="p4-c-5" id="p4-c-5"><label for="p4-c-5">The Balance Sheet totals ₹3,02,250 on both sides.
+<div class="see"><strong>You should see:</strong> both sides of the Balance Sheet total <strong>₹3,34,500</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p4-s19" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s20"><details open><summary data-title="Display the Sales Register"><span class="num"><span>20</span></span><span>Display the Sales Register</span></summary>
+<div class="stepbody"><ol type="1">
+<li>Press <code>Alt + G</code>, type <strong>Sales Register</strong> and press <code>Enter</code>. Set the period 01-04-2025 to 31-03-2026.</li>
+<li>The register lists the sales <strong>vouchers</strong>. The opening balance of the Sales ledger is not a voucher, so it is not listed. Press <code>Enter</code> on <strong>March 2026</strong> to see the vouchers.</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Particulars</th>
+<th>Voucher</th>
+<th style="text-align: right;">Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>26-03-2026</td>
+<td>Debtors</td>
+<td>Sales</td>
+<td style="text-align: right;">30,000</td>
+</tr>
+<tr class="even">
+<td>27-03-2026</td>
+<td>Cash</td>
+<td>Sales</td>
+<td style="text-align: right;">20,000</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td style="text-align: right;"><strong>50,000</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="see"><strong>You should see:</strong> a Sales Register total of <strong>₹50,000</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p4-s20" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s21"><details open><summary data-title="Display the Purchase Register"><span class="num"><span>21</span></span><span>Display the Purchase Register</span></summary>
+<div class="stepbody"><ol type="1">
+<li>Press <code>Alt + G</code>, type <strong>Purchase Register</strong> and press <code>Enter</code>. Set the period 01-04-2025 to 31-03-2026.</li>
+<li>Press <code>Enter</code> on <strong>March 2026</strong> to see the voucher.</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Particulars</th>
+<th>Voucher</th>
+<th style="text-align: right;">Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>25-03-2026</td>
+<td>Creditors</td>
+<td>Purchase</td>
+<td style="text-align: right;">20,000</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td style="text-align: right;"><strong>20,000</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="see"><strong>You should see:</strong> a Purchase Register total of <strong>₹20,000</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p4-s21" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s22"><details open><summary data-title="Display the Cash Book"><span class="num"><span>22</span></span><span>Display the Cash Book</span></summary>
+<div class="stepbody"><p>Press <code>Alt + G</code>, type <strong>Cash Book</strong> and press <code>Enter</code>. Select <strong>Cash</strong>.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Particulars</th>
+<th style="text-align: right;">Debit (₹)</th>
+<th style="text-align: right;">Credit (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Opening Balance</td>
+<td style="text-align: right;">1,600</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>27-03-2026 Sales (cash sale)</td>
+<td style="text-align: right;">20,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>29-03-2026 Salary</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">5,000</td>
+</tr>
+<tr class="even">
+<td>30-03-2026 Bank A/c (Contra)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">8,000</td>
+</tr>
+<tr class="odd">
+<td>Closing Balance</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">8,600</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>21,600</strong></td>
+<td style="text-align: right;"><strong>21,600</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="see"><strong>You should see:</strong> a closing cash balance of <strong>₹8,600</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p4-s22" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s23"><details open><summary data-title="Display the Bank Book"><span class="num"><span>23</span></span><span>Display the Bank Book</span></summary>
+<div class="stepbody"><p>Press <code>Alt + G</code>, type <strong>Bank Book</strong> and press <code>Enter</code>. Select <strong>Bank A/c</strong>.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Particulars</th>
+<th style="text-align: right;">Debit (₹)</th>
+<th style="text-align: right;">Credit (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Opening Balance</td>
+<td style="text-align: right;">25,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>28-03-2026 Debtors (Receipt)</td>
+<td style="text-align: right;">15,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>30-03-2026 Cash (Contra)</td>
+<td style="text-align: right;">8,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>30-03-2026 Creditors (Payment)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">12,000</td>
+</tr>
+<tr class="odd">
+<td>Closing Balance</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">36,000</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>48,000</strong></td>
+<td style="text-align: right;"><strong>48,000</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="see"><strong>You should see:</strong> a closing bank balance of <strong>₹36,000</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p4-s23" data-collapse> Mark this step as done</label></div></details></section><section class="step" id="p4-s24"><details open><summary data-title="Display the ledgers"><span class="num"><span>24</span></span><span>Display the ledgers</span></summary>
+<div class="stepbody"><p>Press <code>Alt + G</code>, type <strong>Ledger</strong>, press <code>Enter</code> and select the ledger. Press <code>Enter</code> on a line to open its voucher.</p>
+<p><strong>Debtors</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Particulars</th>
+<th style="text-align: right;">Debit (₹)</th>
+<th style="text-align: right;">Credit (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Opening Balance</td>
+<td style="text-align: right;">45,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>26-03-2026 Sales</td>
+<td style="text-align: right;">30,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td>28-03-2026 Bank A/c (Receipt)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">15,000</td>
+</tr>
+<tr class="even">
+<td>31-03-2026 Provision for Doubtful Debts (Journal)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">3,000</td>
+</tr>
+<tr class="odd">
+<td>Closing Balance</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">57,000</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>75,000</strong></td>
+<td style="text-align: right;"><strong>75,000</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Creditors</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Particulars</th>
+<th style="text-align: right;">Debit (₹)</th>
+<th style="text-align: right;">Credit (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Opening Balance</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">70,000</td>
+</tr>
+<tr class="even">
+<td>25-03-2026 Purchases</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">20,000</td>
+</tr>
+<tr class="odd">
+<td>30-03-2026 Bank A/c (Payment)</td>
+<td style="text-align: right;">12,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td>Closing Balance</td>
+<td style="text-align: right;">78,000</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>90,000</strong></td>
+<td style="text-align: right;"><strong>90,000</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="see"><strong>You should see:</strong> Debtors of <strong>₹57,000 Dr</strong> (after the provision) and Creditors of <strong>₹78,000 Cr</strong>.
+</div><label class="done-row"><input type="checkbox" data-key="p4-s24" data-collapse> Mark this step as done</label></div></details></section><div class="checkpoint"><strong>Checkpoint 4.</strong> Tick each item before moving on.<ul class="checklist"><li><input type="checkbox" data-key="p4-c-0" id="p4-c-0"><label for="p4-c-0">All 27 ledgers are created with their opening balances under the correct groups.
+</label></li><li><input type="checkbox" data-key="p4-c-1" id="p4-c-1"><label for="p4-c-1">The Trial Balance totals ₹4,85,600 before the vouchers and ₹5,43,600 after them.
+</label></li><li><input type="checkbox" data-key="p4-c-2" id="p4-c-2"><label for="p4-c-2">The seven vouchers are passed, each through its own voucher type.
+</label></li><li><input type="checkbox" data-key="p4-c-3" id="p4-c-3"><label for="p4-c-3">Closing stock of ₹35,000 is entered by altering the Stock ledger, and the four adjustments are passed through Journal vouchers.
+</label></li><li><input type="checkbox" data-key="p4-c-4" id="p4-c-4"><label for="p4-c-4">Gross Profit is ₹1,64,100 and Net Profit is ₹1,05,000.
+</label></li><li><input type="checkbox" data-key="p4-c-5" id="p4-c-5"><label for="p4-c-5">The Balance Sheet totals ₹3,34,500 on both sides.
+</label></li><li><input type="checkbox" data-key="p4-c-6" id="p4-c-6"><label for="p4-c-6">Sales Register ₹50,000, Purchase Register ₹20,000, Cash Book closing ₹8,600 and Bank Book closing ₹36,000 are verified.
 </label></li></ul></div>
 <p><button class="iconbtn" id="resetProgress" style="width:auto;font-size:.9rem;padding:0 .9rem">Reset ticks on this page</button></p>
 <nav class="pager" id="pager" aria-label="Previous and next program"></nav>
